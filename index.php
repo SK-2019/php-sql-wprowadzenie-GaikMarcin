@@ -1,7 +1,7 @@
 <h1>Marcin Gaik 2Ti</h1>
 <?php
     $conn= new mysqli("mysql-marcin-gaik.alwaysdata.net","217182","Marcin123","marcin-gaik_php");
-    $sql=('SELECT * from pracownicy');
+    $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
@@ -19,9 +19,10 @@
             }
         echo("</table>");
     echo("<hr />");
-    
-    $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"'); //mysql
+    $sql=('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"');
+    $result=$conn->query($sql);
         echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
+        echo("<li>$sql");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
