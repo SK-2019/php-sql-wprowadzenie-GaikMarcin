@@ -1,6 +1,9 @@
 <h1>Marcin Gaik 2Ti</h1>
 <?php
     $conn= new mysqli("mysql-marcin-gaik.alwaysdata.net","217182","Marcin123","marcin-gaik_php");
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
         echo("<hr />");
