@@ -1,67 +1,26 @@
-<h1>Marcin Gaik 2Ti</h1>
 <?php
-    $conn= new mysqli("127.0.0.1","root","","nauka1");
-    $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
-        echo("<h3>Tabela Pracowników</h3>");//nazwa nad tabelą
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
-        echo("<th>nazwa_dzial</th>");
-        echo("<th>data_urodzenia</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-    
-    $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"'); //mysql
-        echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
-        echo("<th>nazwa_dzial</th>");
-        echo("<th>data_urodzenia</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
+$servername = "mysql-marcin-gaik.alwaysdata.net";
+$username = "217182";
+$password = "marcin1803";
+$dbname = "marcin-gaik_php";
 
-    $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc'); //mysql
-        echo("<h3>Tabela Pracowników Posortowana Alfabetycznie</h3>");//nazwa nad tabelą
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
-        echo("<th>nazwa_dzial</th>");
-        echo("<th>data_urodzenia</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 
-    $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki asc'); //mysql
-        echo("<h3>Tabela Pracowników Posortowana Zarobkami Rosnąco</h3>");//nazwa nad tabelą
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
-        echo("<th>nazwa_dzial</th>");
-        echo("<th>data_urodzenia</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
+$sql = "SELECT * from pracownicy";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
 ?>
