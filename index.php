@@ -17,6 +17,7 @@
                 echo("</tr>");
             }
         echo("</table>");
+    echo("<hr />");
     
     $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"'); //mysql
         echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
@@ -33,6 +34,7 @@
                 echo("</tr>");
             }
         echo("</table>");
+echo("<hr />");
 
     $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc'); //mysql
         echo("<h3>Tabela Pracowników Posortowana Alfabetycznie</h3>");//nazwa nad tabelą
@@ -49,6 +51,7 @@
                 echo("</tr>");
             }
         echo("</table>");
+echo("<hr />");
 
     $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki asc'); //mysql
         echo("<h3>Tabela Pracowników Posortowana Zarobkami Rosnąco</h3>");//nazwa nad tabelą
@@ -65,4 +68,5 @@
                 echo("</tr>");
             }
         echo("</table>");
+echo("<hr />");
 ?>
