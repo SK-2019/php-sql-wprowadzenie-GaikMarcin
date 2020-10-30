@@ -1,4 +1,5 @@
 <h1>Marcin Gaik 2Ti</h1>
+<h1>test</h1>
 <?php
    require_once('conn.php');
   
