@@ -1,9 +1,5 @@
 <h1>Marcin Gaik 2Ti</h1>
-<<<<<<< HEAD
 <h2>test1</h2> 
-=======
-<h2>test</h2> 
->>>>>>> d3e3b4e4a0883b7da4f1cc2104273b607a5154e0
 <?php
    require_once('conn.php');
   
