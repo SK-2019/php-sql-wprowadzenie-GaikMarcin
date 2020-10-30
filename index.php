@@ -4,6 +4,7 @@
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
         echo("<hr />");
+        echo("<li>$sql");
         echo("<h3>Tabela Pracowników</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
@@ -37,9 +38,10 @@
             }
         echo("</table>");
 echo("<hr />");
-
-    $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc'); //mysql
+    $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc');
+    $result=$conn->query($sql); //mysql
         echo("<h3>Tabela Pracowników Posortowana Alfabetycznie</h3>");//nazwa nad tabelą
+        echo("<li>$sql");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -54,10 +56,11 @@ echo("<hr />");
             }
         echo("</table>");
 echo("<hr />");
-
-    $result=$conn->query('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki asc'); //mysql
+    $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki asc');
+    $result=$conn->query($sql); //mysql
         echo("<h3>Tabela Pracowników Posortowana Zarobkami Rosnąco</h3>");//nazwa nad tabelą
         echo("<table border=1>");
+        echo("<li>$sql");
         echo("<th>id</th>");
         echo("<th>imie</th>");
         echo("<th>dzial</th>");
