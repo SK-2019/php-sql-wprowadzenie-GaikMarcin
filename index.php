@@ -1,6 +1,6 @@
 <h1>Marcin Gaik 2Ti</h1>
 <?php
-    $conn= new mysqli("mysql-marcin-gaik.alwaysdata.net","217182","Marcin123","marcin-gaik_php");
+   $conn = new mysqli($servername, $username, $password, $dbname); 
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -79,7 +79,7 @@ echo("<hr />");
 echo("<hr />");
 
 function robot_pracownicy($nr_zad, $f_sql){
-                $conn= new mysqli("mysql-marcin-gaik.alwaysdata.net","217182","Marcin123","marcin-gaik_php");
+                $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
@@ -100,7 +100,7 @@ function robot_pracownicy($nr_zad, $f_sql){
     robot_pracownicy(1,'SELECT * FROM pracownicy');
 
             function robot_avg($nr_zad, $f_sql){
-                $conn= new mysqli("mysql-marcin-gaik.alwaysdata.net","217182","Marcin123","marcin-gaik_php");
+                $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
@@ -119,7 +119,7 @@ function robot_pracownicy($nr_zad, $f_sql){
     robot_avg(2,'SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial');
 
             function robot_count($nr_zad, $f_sql){
-                $conn= new mysqli("mysql-marcin-gaik.alwaysdata.net","217182","Marcin123","marcin-gaik_php");
+                $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
@@ -138,7 +138,7 @@ function robot_pracownicy($nr_zad, $f_sql){
     robot_count(3,'SELECT dzial,count(imie) as ilosc from pracownicy group by dzial');
 
             function robot_sum($nr_zad, $f_sql){
-                $conn= new mysqli("mysql-marcin-gaik.alwaysdata.net","217182","Marcin123","marcin-gaik_php");
+               $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
@@ -157,7 +157,7 @@ function robot_pracownicy($nr_zad, $f_sql){
     robot_sum(4,'SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial');
 
             function robot_min($nr_zad, $f_sql){
-                    $conn= new mysqli("mysql-marcin-gaik.alwaysdata.net","217182","Marcin123","marcin-gaik_php");
+                    $conn = new mysqli($servername, $username, $password, $dbname);
                     $sql=$f_sql;
                     $result=$conn->query($sql);
                         echo("<table border=1>");
