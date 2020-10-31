@@ -1,2 +1,2 @@
 # PHP-SQL-wprowadzenie
-http://marcingaik.herokuapp.com/
+http://php-marcin-gaik.herokuapp.com/
