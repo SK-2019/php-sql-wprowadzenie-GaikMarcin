@@ -7,3 +7,7 @@ table, th, td {
 td {
   text-align: center;
 }
+th {
+  background-color: #4CAF50;
+  color: white;
+}
