@@ -1,4 +1,6 @@
-
+/* body {
+    background-color: lightblue;
+  } */
 table, th, td {
   border: 1px solid red;
 }
@@ -14,4 +16,8 @@ table {
 }
 #grad {
   background-image: linear-gradient(to bottom right blue,red);
+}
+#grad1 {
+  height: 100000px;
+  background-image: linear-gradient(to bottom right, blue, red, yellow);
 }
