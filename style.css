@@ -15,6 +15,7 @@ th {
 }
 table {
   border-collapse: collapse;
+  background-color: green;
 }
 #grad {
   background-image: linear-gradient(to bottom right blue,red);
