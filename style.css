@@ -11,3 +11,7 @@ th {
   background-color: blue;
   color: white;
 }
+div.relative {
+  position: relative;
+  left: 100px;
+}
