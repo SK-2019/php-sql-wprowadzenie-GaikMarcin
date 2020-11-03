@@ -16,3 +16,6 @@ div.relative {
   left: 30px;
   border: 0px solid #73AD21;
 }
+table {
+  border-collapse: collapse;
+}
