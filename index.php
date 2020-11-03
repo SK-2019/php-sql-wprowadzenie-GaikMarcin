@@ -1,5 +1,5 @@
 <h1>Marcin Gaik 2Ti</h1>
-<?php.
+<?php
    require_once('conn.php');
   
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
