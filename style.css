@@ -13,5 +13,6 @@ th {
 }
 div.relative {
   position: relative;
-  left: 100px;
+  left: 30px;
+  border: 0px solid #73AD21;
 }
