@@ -6,6 +6,8 @@ table, th, td {
 }
 td {
   text-align: center;
+  background-color: red;
+  color:blue;
 }
 th {
   background-color: blue;
@@ -14,8 +16,8 @@ th {
 table {
   border-collapse: collapse;
 }
-#grad {
-  background-image: linear-gradient(to bottom right blue,red);
+/* #grad {
+  background-image: linear-gradient(to bottom right blue,red); */
 }
 body {
   /* height: 10000px; */
