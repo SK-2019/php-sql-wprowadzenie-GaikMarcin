@@ -1,4 +1,10 @@
-<h1>Marcin Gaik 2Ti</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Marcin Gaik 2Ti</h1>
 <?php
    require_once('conn.php');
   
