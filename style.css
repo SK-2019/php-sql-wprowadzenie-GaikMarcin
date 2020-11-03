@@ -18,6 +18,6 @@ table {
   background-image: linear-gradient(to bottom right blue,red);
 }
 body {
-  height: 100000px;
+  height: 100px;
   background-image: linear-gradient(to bottom right, blue, red, yellow);
 }
