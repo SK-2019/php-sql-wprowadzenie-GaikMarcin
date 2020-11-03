@@ -1,6 +1,6 @@
-/* body {
+body {
     background-color: lightblue;
-  } */
+  }
 table, th, td {
   border: 10px solid red;
 }
@@ -17,7 +17,8 @@ table {
 #grad {
   background-image: linear-gradient(to bottom right blue,red);
 }
-body {
+/* body {
   height: 10000px;
   background-image: linear-gradient(to bottom right, blue, red, yellow);
-}
+} */
+tr:nth-child(even){background-color: yellow}
