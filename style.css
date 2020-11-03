@@ -17,7 +17,7 @@ table {
 #grad {
   background-image: linear-gradient(to bottom right blue,red);
 }
-#grad1 {
+body {
   height: 100000px;
   background-image: linear-gradient(to bottom right, blue, red, yellow);
 }
