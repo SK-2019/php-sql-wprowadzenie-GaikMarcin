@@ -11,11 +11,6 @@ th {
   background-color: blue;
   color: white;
 }
-div.relative {
-  position: relative;
-  left: 30px;
-  border: 0px solid #73AD21;
-}
 table {
   border-collapse: collapse;
 }
