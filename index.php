@@ -84,7 +84,7 @@ echo("<hr />");
 echo("<hr />");
 
     function robot_sum($nr_zad, $f_sql){
-        require_once('connect.php');
+        require_once('conn.php');
         $sql=$f_sql;
         $result=$conn->query($sql);
             echo("<table border=1>");
