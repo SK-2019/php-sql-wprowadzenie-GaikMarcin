@@ -84,7 +84,7 @@ echo("<hr />");
 echo("<hr />");
 function robot_sum($nr_zad, $f_sql){
     require_once('conn.php');
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
     $sql=$f_sql;
     $result=$conn->query($sql);
         echo("<table border=1>");
