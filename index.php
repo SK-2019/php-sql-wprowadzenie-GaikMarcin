@@ -83,23 +83,22 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
 
-    function robot_sum($nr_zad, $f_sql){
-        require_once('conn.php');
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $sql=$f_sql;
-        $result=$conn->query($sql);
-            echo("<table border=1>");
-            echo("<h3>ZAD $nr_zad</h3>");
-            echo("<li>SQL: $sql");
-            echo("<th>dział</th>");
-            echo("<th>suma</th>");
-                while($row=$result->fetch_assoc()){
-                    echo("<tr>");
-                        echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma"]."</td>");
-                    echo("</tr>");
-                    }
-            echo("</table>");
-            }
-            robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
+function robot_sum($nr_zad, $f_sql){
+    require_once('conn.php');
+    $sql=$f_sql;
+    $result=$conn->query($sql);
+        echo("<table border=1>");
+        echo("<h3>ZAD $nr_zad</h3>");
+        echo("<li>SQL: $sql");
+        echo("<th>dział</th>");
+        echo("<th>suma</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma"]."</td>");
+                echo("</tr>");
+                }
+        echo("</table>");
+        }
+        robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
 echo("<hr />");
 ?>
