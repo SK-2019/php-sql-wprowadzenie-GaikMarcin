@@ -83,6 +83,7 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
 function robot_sum($nr_zad, $f_sql){
+    $conn = new mysqli($servername, $username, $password, $dbname);
     $sql=$f_sql;
     $result=$conn->query($sql);
         echo("<table border=1>");
