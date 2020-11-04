@@ -82,6 +82,20 @@ echo("<hr />");
             }
         echo("</table>");
 echo("<hr />");
-
-
+function robot_sum($nr_zad, $f_sql){
+    $sql=$f_sql;
+    $result=$conn->query($sql);
+        echo("<table border=1>");
+        echo("<h3>ZAD $nr_zad</h3>");
+        echo("<li>SQL: $sql");
+        echo("<th>dział</th>");
+        echo("<th>suma</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td>");
+                echo("</tr>");
+                }
+        echo("</table>");
+        }
+        robot_sum(1,'SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial');
 ?>
