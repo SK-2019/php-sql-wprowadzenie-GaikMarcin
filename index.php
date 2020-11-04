@@ -83,8 +83,7 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
 function robot_sum($nr_zad, $f_sql){
-    require_once('conn.php');
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    require_once('connect.php');
     $sql=$f_sql;
     $result=$conn->query($sql);
         echo("<table border=1>");
@@ -94,7 +93,7 @@ function robot_sum($nr_zad, $f_sql){
         echo("<th>suma</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma"]."</td>");
                 echo("</tr>");
                 }
         echo("</table>");
