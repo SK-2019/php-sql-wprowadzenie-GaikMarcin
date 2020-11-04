@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> link do githuba mojego </a>
+<a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> link do mojego githuba </a>
 </head>
 <body>
    <h1>Marcin Gaik 2Ti</h1>
@@ -83,7 +83,7 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
 function robot_sum($nr_zad, $f_sql){
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    require_once('conn.php');
     $sql=$f_sql;
     $result=$conn->query($sql);
         echo("<table border=1>");
