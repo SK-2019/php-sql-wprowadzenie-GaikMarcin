@@ -99,5 +99,5 @@ function robot_sum($nr_zad, $f_sql){
                 }
         echo("</table>");
         }
-        robot_sum(1,'SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial');
+        robot_sum(1,'SELECT dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
 ?>
