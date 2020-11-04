@@ -99,5 +99,6 @@ echo("<hr />");
                     }
             echo("</table>");
             }
-            robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
+            robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where dzial=id_org group by dzial');
+echo("<hr />");
 ?>
