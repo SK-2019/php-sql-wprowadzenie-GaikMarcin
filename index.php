@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> link do mojego githuba </a>
+<a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 </head>
 <body>
    <h1>Marcin Gaik 2Ti</h1>
