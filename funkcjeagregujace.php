@@ -216,6 +216,7 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
             echo("<h3>Group by</h3>");
+            echo("<hr />");
             
             $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where dzial=id_org group by dzial');
     $result=$conn->query($sql); //mysql
@@ -260,4 +261,5 @@ echo("<hr />");
         echo("</table>");
 echo("<hr />");
             echo("<h3>Having</h3>");
+            echo("<hr />");
 ?>
