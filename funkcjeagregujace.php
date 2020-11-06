@@ -8,13 +8,15 @@
 </div>
 </head>
 <body>
-    <h1>Funkcje Agregujące</h1>
+<h1>Marcin Gaik 2Ti</h1>    
+<h1>Funkcje Agregujące</h1>
 <?php
             echo("<hr />");
             function robot_pracownicy($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
+                echo("<h3>Funkcje Agregujące</h3>");
                     echo("<table border=1>");
                     echo("<h3>ZAD $nr_zad</h3>");
                     echo("<li>SQL: $sql");
