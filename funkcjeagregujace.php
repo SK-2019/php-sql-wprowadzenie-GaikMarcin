@@ -153,4 +153,7 @@
             robot_sum(2,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie like "%a"');
             robot_sum(3,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie not like "%a" and dzial=2 or dzial=3 group by dzial');
             robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
+            robot_avg(5,'SELECT dzial,avg(zarobki) as srednia from pracownicy where imie not like "%a" and dzial between 1 and 2');
+            robot_count(6,'SELECT count(imie) as liczba from pracownicy');
+            robot_count(7,'SELECT dzial,count(imie) as liczba from pracownicy where dzial=1 or dzial=3');
 ?>
