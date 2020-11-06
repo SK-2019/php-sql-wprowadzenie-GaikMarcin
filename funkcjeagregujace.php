@@ -200,7 +200,7 @@ $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja wh
         echo("</table>");
 echo("<hr />");
             
-            $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy');
+            $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql); //mysql
         echo("<h3>ZAD 7</h3>");//nazwa nad tabelą
         echo("<table border=1>");
