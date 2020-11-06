@@ -206,11 +206,11 @@ echo("<hr />");
         echo("<h3>ZAD 8</h3>");//nazwa nad tabelą
         echo("<table border=1>");
         echo("<li>SQL: $sql");
-        echo("<th>suma</th>");
+        echo("<th>ilosc</th>");
         echo("<th>nazwa działu</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
+                    echo("<td>".$row['ilosc']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
