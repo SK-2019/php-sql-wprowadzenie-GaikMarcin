@@ -156,7 +156,7 @@
             robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
             robot_avg(5,'SELECT dzial,avg(zarobki) as srednia from pracownicy where imie not like "%a" and dzial between 1 and 2');
             robot_count(6,'SELECT count(imie) as liczba from pracownicy');
-            robot_count(7,'SELECT dzial,count(imie) as liczba from pracownicy where dzial=1 or dzial=3');
+            robot_count(7,'SELECT count(imie) as liczba from pracownicy where dzial=1 or dzial=3');
             robot_sum(8,'SELECT dzial,sum(zarobki)as suma from pracownicy group by dzial');
             robot_count(9,'SELECT dzial,count(imie) as liczba from pracownicy group by dzial');
             robot_avg(10,'SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial');
