@@ -40,7 +40,7 @@
                 }
             echo("</table>");
     echo("<hr />");
-    $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie not like "%a" and dzial=id_org and dzial=2 or dzial=3 group by nazwa_dzial');
+    $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie not like "%a" and dzial=id_org and dzial=2 or dzial=3 group by dzial');
     $result=$conn->query($sql); //mysql
         echo("<h3>ZAD 3</h3>");//nazwa nad tabelą
         echo("<table border=1>");
@@ -168,8 +168,8 @@ echo("<hr />");
             }
             
             
-            robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
-            robot_avg(5,'SELECT dzial,avg(zarobki) as srednia from pracownicy where imie not like "%a" and dzial between 1 and 2');
+robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
+robot_avg(5,'SELECT dzial,avg(zarobki) as srednia from pracownicy where imie not like "%a" and dzial between 1 and 2');
             $sql=('SELECT count(imie) as ilosc from pracownicy');
     $result=$conn->query($sql); //mysql
         echo("<h3>ZAD 6</h3>");//nazwa nad tabelą
