@@ -7,7 +7,6 @@
 <?php
     require_once('conn.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
-        echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
@@ -22,4 +21,5 @@
                 echo("</tr>");
             }
         echo("</table>");
+        echo("<hr />");
         ?>
