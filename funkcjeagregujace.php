@@ -32,7 +32,7 @@
                     echo("</table>");
                     echo("<hr />");
                     }
-    robot_pracownicy(1,'SELECT * FROM pracownicy');
+    
 
             function robot_avg($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
@@ -51,7 +51,7 @@
                     echo("</table>");
                     echo("<hr />");
                 }
-    robot_avg(2,'SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial');
+                robot_avg(4,'SELECT dzial,avg(zarobki) from')
 
             function robot_count($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
@@ -70,7 +70,7 @@
                     echo("</table>");
                     echo("<hr />");
                     }
-    robot_count(3,'SELECT dzial,count(imie) as ilosc from pracownicy group by dzial');
+    
 
             function robot_sum($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
@@ -89,8 +89,9 @@
                     echo("</table>");
                     echo("<hr />");
                     }
-    robot_sum(4,'SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial');
-
+                    robot_sum(1,'SELECT sum(zarobki) as suma from pracownicy');
+                    robot_sum(2,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie like "%a"');
+                    robot_sum(3,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie not like "%a" and dzial=2 or dzial=3 group by dzial');
             function robot_min($nr_zad, $f_sql){
                     $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
                     $sql=$f_sql;
@@ -108,7 +109,7 @@
                         echo("</table>");
                         echo("<hr />");
                         }
-    robot_min(5,'SELECT dzial,min(zarobki) as minimalne from pracownicy group by dzial');
+    
         function robot_max($nr_zad, $f_sql){
             $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
             $sql=$f_sql;
@@ -126,5 +127,5 @@
                 echo("</table>");
                 echo("<hr />");
             }
-        robot_max(6,'SELECT dzial,max(zarobki) as maksymalne from pracownicy group by dzial');
+        
 ?>
