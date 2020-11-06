@@ -14,8 +14,8 @@
 <?php
     echo("<hr />");
     require_once('conn.php');;
+    $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2 group by nazwa_dzial');
     $result=$conn->query($sql);//mysql
-        $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2 group by nazwa_dzial');
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -31,8 +31,8 @@
         echo("</table>");
         echo("<hr />");
 
-        $result=$conn->query($sql);//mysql
         $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2 or dzial=3 group by nazwa_dzial');
+        $result=$conn->query($sql);//mysql
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -48,8 +48,8 @@
         echo("</table>");
         echo("<hr />");
         
-        $result=$conn->query($sql)//mysql
         $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and zarobki<30 group by nazwa_dzial');
+        $result=$conn->query($sql)//mysql
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
