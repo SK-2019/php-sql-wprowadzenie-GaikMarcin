@@ -35,7 +35,7 @@
             echo("<th>nazwa działu</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['dzial']."</td>");
+                        echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
                     echo("</tr>");
                 }
             echo("</table>");
