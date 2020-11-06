@@ -20,7 +20,7 @@
     background-image: linear-gradient(to bottom right blue,red);
   }
   body {
-    height: 100px;
+    height: 10000px;
     background-image: linear-gradient(to bottom right, blue, red, yellow);
   }
   hr {
