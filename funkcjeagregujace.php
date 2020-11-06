@@ -168,8 +168,22 @@ echo("<hr />");
             }
             
             
-robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
-robot_avg(5,'SELECT dzial,avg(zarobki) as srednia from pracownicy where imie not like "%a" and dzial between 1 and 2');
+robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy');
+
+$sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja where dzial=4 and dzial=id_org group by nazwa_dzial');
+        $result=$conn->query($sql); //mysql
+            echo("<h3>ZAD 5</h3>");//nazwa nad tabelą
+            echo("<table border=1>");
+            echo("<li>SQL: $sql");
+            echo("<th>srednia</th>");
+            echo("<th>nazwa działu</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row['srednia']."</td><td>".$row['nazwa_dzial']."</td>");
+                    echo("</tr>");
+                }
+            echo("</table>");
+    echo("<hr />");
             $sql=('SELECT count(imie) as ilosc from pracownicy');
     $result=$conn->query($sql); //mysql
         echo("<h3>ZAD 6</h3>");//nazwa nad tabelą
