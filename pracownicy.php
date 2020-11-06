@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Marcin Gaik 2Ti</h1>
-<h2>Tabela Pracowników</h2>
+<h3>Tabela Pracowników</h3>
 <?php
     echo("<hr />");
     require_once('conn.php');;
