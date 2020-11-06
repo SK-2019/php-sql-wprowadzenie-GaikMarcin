@@ -41,6 +41,7 @@
                             echo("</tr>");
                             }
                     echo("</table>");
+                    echo("<hr />");
                 }
     robot_avg(2,'SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial');
 
@@ -59,6 +60,7 @@
                             echo("</tr>");
                         }
                     echo("</table>");
+                    echo("<hr />");
                     }
     robot_count(3,'SELECT dzial,count(imie) as ilosc from pracownicy group by dzial');
 
@@ -77,6 +79,7 @@
                             echo("</tr>");
                             }
                     echo("</table>");
+                    echo("<hr />");
                     }
     robot_sum(4,'SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial');
 
@@ -95,6 +98,7 @@
                                 echo("</tr>");
                                 }
                         echo("</table>");
+                        echo("<hr />");
                         }
     robot_min(5,'SELECT dzial,min(zarobki) as minimalne from pracownicy group by dzial');
 ?>
