@@ -12,6 +12,7 @@
 <h1>Marcin Gaik 2Ti</h1>  
 <h3>Funkcje Agregujące</h3>  
 <?php
+             require_once('conn.php');
             $sql=('SELECT sum(zarobki) as suma from pracownicy');
             $result=$conn->query($sql); //mysql
                 echo("<h3>ZAD 1</h3>");//nazwa nad tabelą
