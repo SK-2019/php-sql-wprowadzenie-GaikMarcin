@@ -63,3 +63,7 @@ body {
   .nav_link{
     color: lightgreen;
   }
+  h2 {
+    margin: 20px auto;
+    font-family:helvetica; 
+    text-align:center;
