@@ -10,7 +10,6 @@
 </head>
 <body>
 <h1>Marcin Gaik 2Ti</h1>    
-<h1>Funkcje Agregujące</h1>
 <?php
             echo("<hr />");
             function robot_pracownicy($nr_zad, $f_sql){
