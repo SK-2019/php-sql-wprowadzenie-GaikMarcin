@@ -171,7 +171,7 @@
                 echo("<hr />");
 
                 echo("<h3>Mężczyźni posortowani rosnąco: po nazwie działu a następnie po wysokości zarobków</h3>");
-        $sql=('SELECT * FROM pracownicy,organizacja where imie not like "%a" and dzial=id_org group by nazwa_dzial (order by imie asc or order by zarobki asc)');
+        $sql=('SELECT * FROM pracownicy,organizacja where imie not like "%a" and dzial=id_org group by nazwa_dzial order by imie asc order by zarobki asc');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
                 echo("<li>SQL: $sql");
