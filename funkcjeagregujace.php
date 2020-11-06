@@ -109,4 +109,22 @@
                         echo("<hr />");
                         }
     robot_min(5,'SELECT dzial,min(zarobki) as minimalne from pracownicy group by dzial');
+        function robot_max($nr_zad, $f_sql){
+            $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
+            $sql=$f_sql;
+            $result=$conn->query($sql);
+                echo("<table border=1>");
+                echo("<h3>ZAD $nr_zad</h3>");
+                echo("<li>SQL: $sql");
+                echo("<th>dział</th>");
+                echo("<th>maksymalne</th>");
+                    while($row=$result->fetch_assoc()){
+                     echo("<tr>");
+                        echo("<td>".$row["dzial"]."</td><td>".$row["maksymalne"]."</td>");
+                     echo("</tr>");
+                    }
+                echo("</table>");
+                echo("<hr />");
+            }
+        robot_max(6,'SELECT dzial,max(zarobki) as maksymalne from pracownicy group by dzial');
 ?>
