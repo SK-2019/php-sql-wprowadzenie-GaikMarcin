@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1>Marcin Gaik 2Ti</h1>  
-<h3>Funkcje Agregujące</h3>  
+<h2>Funkcje Agregujące</h2>  
 <?php
              echo("<hr />");
              require_once('conn.php');

@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1>Marcin Gaik 2Ti</h1>
-<h3>Tabela Pracowników</h3>
+<h2>Tabela Pracowników</h2>
 <?php
             echo("<hr />");
             echo("<h3>Pracownicy tylko z działu 2</h3>");
