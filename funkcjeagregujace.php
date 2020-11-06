@@ -26,15 +26,16 @@
                     }
                 echo("</table>");
         echo("<hr />");
-        $sql=('SELECT sum(zarobki) as suma from pracownicy where imie like "%a"');
+        $sql=('SELECT sum(zarobki) as suma from pracownicy,organizacja where imie like "%a" and dzial=id_org');
         $result=$conn->query($sql); //mysql
             echo("<h3>ZAD 2</h3>");//nazwa nad tabelą
             echo("<table border=1>");
             echo("<li>SQL: $sql");
             echo("<th>suma</th>");
+            echo("<th>nazwa działu</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row['suma']."</td>");
+                        echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
                     echo("</tr>");
                 }
             echo("</table>");
@@ -153,7 +154,6 @@
                 echo("<hr />");
             }
             
-            robot_sum(2,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie like "%a"');
             robot_sum(3,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie not like "%a" and dzial=2 or dzial=3 group by dzial');
             robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
             robot_avg(5,'SELECT dzial,avg(zarobki) as srednia from pracownicy where imie not like "%a" and dzial between 1 and 2');
