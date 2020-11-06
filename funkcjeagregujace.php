@@ -16,7 +16,7 @@
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
-                echo("<h3>Funkcje Agregujące</h3>");
+                echo("<h2>Funkcje Agregujące</h2>");
                     echo("<table border=1>");
                     echo("<h3>ZAD $nr_zad</h3>");
                     echo("<li>SQL: $sql");
