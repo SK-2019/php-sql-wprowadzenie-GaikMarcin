@@ -17,33 +17,23 @@
                 echo("<h3>ZAD 1</h3>");//nazwa nad tabelą
                 echo("<table border=1>");
                 echo("<li>SQL: $sql");
-                echo("<th>id</th>");
-                echo("<th>imię</th>");
-                echo("<th>dział</th>");
-                echo("<th>zarobki</th>");
-                echo("<th>nazwa działu</th>");
-                echo("<th>data urodzenia</th>");
+                echo("<th>suma</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
-                            echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
+                            echo("<td>".$row['suma']."</td>");
                         echo("</tr>");
                     }
                 echo("</table>");
         echo("<hr />");
         $sql=('SELECT sum(zarobki) as suma from pracownicy where imie like "%a"');
         $result=$conn->query($sql); //mysql
-            echo("<h3>ZAD 1</h3>");//nazwa nad tabelą
+            echo("<h3>ZAD 2</h3>");//nazwa nad tabelą
             echo("<table border=1>");
             echo("<li>SQL: $sql");
-            echo("<th>id</th>");
-            echo("<th>imię</th>");
-            echo("<th>dział</th>");
-            echo("<th>zarobki</th>");
-            echo("<th>nazwa działu</th>");
-            echo("<th>data urodzenia</th>");
+            echo("<th>suma</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
+                        echo("<td>".$row['suma']."</td>");
                     echo("</tr>");
                 }
             echo("</table>");
