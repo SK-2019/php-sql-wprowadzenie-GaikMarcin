@@ -19,9 +19,9 @@
   #grad {
     background-image: linear-gradient(to bottom right blue,red);
   }
-  body {
+  /* body {
     height: 10000px;
-    background-image: linear-gradient(to bottom right, blue, red, yellow);
+    background-image: linear-gradient(to bottom right, blue, red, yellow); */
   }
   hr {
     border: 2px solid black;
