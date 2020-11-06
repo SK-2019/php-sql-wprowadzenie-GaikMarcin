@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <?php
     require_once('conn.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
