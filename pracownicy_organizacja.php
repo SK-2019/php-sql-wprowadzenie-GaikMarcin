@@ -19,6 +19,7 @@
         $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org group by nazwa_dzial');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
+                echo("<li>SQL: $sql");
                 echo("<th>id</th>");
                 echo("<th>imie</th>");
                 echo("<th>dzial</th>");
@@ -37,6 +38,7 @@
         $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and (dzial=1 or dzial=4)');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
+                echo("<li>SQL: $sql");
                 echo("<th>id</th>");
                 echo("<th>imie</th>");
                 echo("<th>dzial</th>");
@@ -55,6 +57,7 @@
         $sql=('SELECT * FROM pracownicy,organizacja where imie like "%a" and dzial=id_org group by nazwa_dzial');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
+                echo("<li>SQL: $sql");
                 echo("<th>id</th>");
                 echo("<th>imie</th>");
                 echo("<th>dzial</th>");
