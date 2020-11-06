@@ -212,7 +212,7 @@
                 echo("<hr />");
 
                 cho("<h3>Trzy najlepiej zarabiające kobiety z działu 4 i 2</h3>");
-        $sql=('');
+        $sql=('SELECT * FROM pracownicy,organizacja where imie like "%a" and dzial=id_org and dzial=4 or dzial=2 group by nazwa_dzial order by zarobki asc LIMIT 2;');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
                 echo("<li>SQL: $sql");
