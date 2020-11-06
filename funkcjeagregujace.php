@@ -158,6 +158,6 @@
             robot_count(6,'SELECT count(imie) as ilosc from pracownicy');
             robot_count(7,'SELECT count(imie) as ilosc from pracownicy where dzial=1 or dzial=3');
             robot_sum(8,'SELECT dzial,sum(zarobki)as suma from pracownicy group by dzial');
-            robot_count(9,'SELECT dzial,count(imie) as ilosc from pracownicy group by dzial');
+            robot_count(9,'SELECT count(imie) as ilosc from pracownicy');
             robot_avg(10,'SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial');
 ?>
