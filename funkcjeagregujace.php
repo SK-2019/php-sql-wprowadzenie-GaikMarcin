@@ -184,15 +184,16 @@ $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja wh
                 }
             echo("</table>");
     echo("<hr />");
-            $sql=('SELECT count(imie) as ilosc from pracownicy');
+    $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja where imie not like "%a" and dzial=1 or dzial=2 and dzial=id_org group by nazwa_dzial');
     $result=$conn->query($sql); //mysql
         echo("<h3>ZAD 6</h3>");//nazwa nad tabelą
         echo("<table border=1>");
         echo("<li>SQL: $sql");
-        echo("<th>ilosc</th>");
+        echo("<th>srednia</th>");
+        echo("<th>nazwa działu</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['ilosc']."</td>");
+                    echo("<td>".$row['srednia']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
