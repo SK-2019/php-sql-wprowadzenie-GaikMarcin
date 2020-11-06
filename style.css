@@ -75,4 +75,9 @@
     text-align:center;
     color: yellow;
   }
-  
+  .nav {
+    background-color:lightblue;
+  }
+  .nav_link{
+    color: lightgreen;
+  }
