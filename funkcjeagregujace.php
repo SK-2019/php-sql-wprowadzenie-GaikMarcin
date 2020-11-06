@@ -22,6 +22,7 @@
                             echo("</tr>");
                         }
                     echo("</table>");
+                    echo("<hr />");
                     }
     robot_pracownicy(1,'SELECT * FROM pracownicy');
 
