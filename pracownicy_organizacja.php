@@ -34,7 +34,7 @@
                 echo("<hr />");
                 
                 echo("<h3>Pracownicy tylko z działu 1 i 4</h3>");
-        $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=1 or dzial=4 group by nazwa_dzial');
+        $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=1 or dzial=4 group by dzial');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
                 echo("<th>id</th>");
