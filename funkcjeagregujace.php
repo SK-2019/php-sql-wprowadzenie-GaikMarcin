@@ -12,6 +12,7 @@
 <h1>Marcin Gaik 2Ti</h1>  
 <h3>Funkcje Agregujące</h3>  
 <?php
+             echo("<hr />");
              require_once('conn.php');
             $sql=('SELECT sum(zarobki) as suma from pracownicy');
             $result=$conn->query($sql); //mysql
@@ -201,7 +202,7 @@ echo("<hr />");
             robot_count(7,'SELECT count(imie) as ilosc from pracownicy');
             $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where imie like "%a" and dzial=id_org and dzial=1 or dzial=3 group by dzial');
     $result=$conn->query($sql); //mysql
-        echo("<h3>ZAD 3</h3>");//nazwa nad tabelą
+        echo("<h3>ZAD 8</h3>");//nazwa nad tabelą
         echo("<table border=1>");
         echo("<li>SQL: $sql");
         echo("<th>suma</th>");
@@ -213,6 +214,7 @@ echo("<hr />");
             }
         echo("</table>");
 echo("<hr />");
-            robot_count(9,'SELECT dzial,count(imie) as ilosc from pracownicy group by dzial');
-            robot_avg(10,'SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial');
+            echo("<h3>Group by</h3>");
+
+            
 ?>
