@@ -4,7 +4,9 @@
 <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <h1>Funkcje Agregujące</h1>
 <?php
+            echo("<hr />");
             function robot_pracownicy($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
                 $sql=$f_sql;
