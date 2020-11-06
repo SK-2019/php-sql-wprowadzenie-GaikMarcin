@@ -51,7 +51,6 @@
                     echo("</table>");
                     echo("<hr />");
                 }
-                robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
 
             function robot_count($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
@@ -89,9 +88,7 @@
                     echo("</table>");
                     echo("<hr />");
                     }
-                    robot_sum(1,'SELECT sum(zarobki) as suma from pracownicy');
-                    robot_sum(2,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie like "%a"');
-                    robot_sum(3,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie not like "%a" and dzial=2 or dzial=3 group by dzial');
+                    
             function robot_min($nr_zad, $f_sql){
                     $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
                     $sql=$f_sql;
