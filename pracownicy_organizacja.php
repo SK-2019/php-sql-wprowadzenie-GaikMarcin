@@ -193,7 +193,7 @@
                 echo("<hr />");
 
                 cho("<h3>Dwóch najlepiej zarabiających pracowników z działu 4</h3>");
-        $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=4 group by nazwa_dzial order by zarobki asc LIMIT 2 LIMIT 2;');
+        $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=4 group by nazwa_dzial order by zarobki asc LIMIT 2;');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
                 echo("<li>SQL: $sql");
@@ -212,7 +212,7 @@
                 echo("<hr />");
 
                 cho("<h3>Trzy najlepiej zarabiające kobiety z działu 4 i 2</h3>");
-        $sql=('SELECT * FROM pracownicy,organizacja WHERE dzial = id_org and dzial= 4 LIMIT 2;');
+        $sql=('');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
                 echo("<li>SQL: $sql");
