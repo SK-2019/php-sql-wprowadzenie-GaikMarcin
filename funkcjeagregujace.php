@@ -12,7 +12,42 @@
 <h1>Marcin Gaik 2Ti</h1>  
 <h3>Funkcje Agregujące</h3>  
 <?php
-            echo("<hr />");
+            $sql=('SELECT sum(zarobki) as suma from pracownicy');
+            $result=$conn->query($sql); //mysql
+                echo("<h3>ZAD 1</h3>");//nazwa nad tabelą
+                echo("<table border=1>");
+                echo("<li>SQL: $sql");
+                echo("<th>id</th>");
+                echo("<th>imię</th>");
+                echo("<th>dział</th>");
+                echo("<th>zarobki</th>");
+                echo("<th>nazwa działu</th>");
+                echo("<th>data urodzenia</th>");
+                    while($row=$result->fetch_assoc()){
+                        echo("<tr>");
+                            echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
+                        echo("</tr>");
+                    }
+                echo("</table>");
+        echo("<hr />");
+        $sql=('SELECT sum(zarobki) as suma from pracownicy where imie like "%a"');
+        $result=$conn->query($sql); //mysql
+            echo("<h3>ZAD 1</h3>");//nazwa nad tabelą
+            echo("<table border=1>");
+            echo("<li>SQL: $sql");
+            echo("<th>id</th>");
+            echo("<th>imię</th>");
+            echo("<th>dział</th>");
+            echo("<th>zarobki</th>");
+            echo("<th>nazwa działu</th>");
+            echo("<th>data urodzenia</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
+                    echo("</tr>");
+                }
+            echo("</table>");
+    echo("<hr />");
             function robot_pracownicy($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
                 $sql=$f_sql;
@@ -124,7 +159,7 @@
                 echo("</table>");
                 echo("<hr />");
             }
-            robot_sum(1,'SELECT sum(zarobki) as suma from pracownicy');
+            
             robot_sum(2,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie like "%a"');
             robot_sum(3,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie not like "%a" and dzial=2 or dzial=3 group by dzial');
             robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
