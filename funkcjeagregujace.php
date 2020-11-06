@@ -157,7 +157,7 @@
             robot_sum(3,'SELECT dzial,sum(zarobki) as suma from pracownicy where imie not like "%a" and dzial=2 or dzial=3 group by dzial');
             robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
             robot_avg(5,'SELECT dzial,avg(zarobki) as srednia from pracownicy where imie not like "%a" and dzial between 1 and 2');
-            $sql=('SELECT count(imie) from pracownicy');
+            $sql=('SELECT count(imie) as ilosc from pracownicy');
     $result=$conn->query($sql); //mysql
         echo("<h3>ZAD 6</h3>");//nazwa nad tabelą
         echo("<table border=1>");
@@ -165,7 +165,7 @@
         echo("<th>ilosc</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['imie']."</td>");
+                    echo("<td>".$row['ilosc']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
