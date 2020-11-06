@@ -48,7 +48,8 @@
         echo("</table>");
         echo("<hr />");
         
-        $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org and zarobki<30');//mysql
+        $result=$conn->query($sql)//mysql
+        $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and zarobki<30 group by nazwa_dzial');
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
