@@ -51,7 +51,7 @@
                     echo("</table>");
                     echo("<hr />");
                 }
-                robot_avg(4,'SELECT dzial,avg(zarobki) from')
+                robot_avg(4,'SELECT dzial,avg(zarobki) as srednia from pracownicy where dzial=4 group by dzial');
 
             function robot_count($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
