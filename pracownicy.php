@@ -2,6 +2,10 @@
 <html>
 <head>
 <link rel="stylesheet" href="style1.css">
+<div class="nav">
+    <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
+    <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+</div>
 </head>
 <body>
 <h1>Tabela Pracowników</h1>
