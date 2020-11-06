@@ -5,7 +5,7 @@
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 <div class="nav">
     <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
-    <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+    <<a class="nav_link" href="index.php">Strona Główna</a>
 </div>
 </head>
 <body>
