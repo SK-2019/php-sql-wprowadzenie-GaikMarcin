@@ -26,7 +26,7 @@
                     }
                 echo("</table>");
         echo("<hr />");
-        $sql=('SELECT dzial,sum(zarobki) as suma from pracownicy,organizacja where imie like "%a" and dzial=id_org');
+        $sql=('SELECT sum(zarobki) as suma from pracownicy,organizacja where imie like "%a" and dzial=id_org group by nazwa_dzial');
         $result=$conn->query($sql); //mysql
             echo("<h3>ZAD 2</h3>");//nazwa nad tabelą
             echo("<table border=1>");
