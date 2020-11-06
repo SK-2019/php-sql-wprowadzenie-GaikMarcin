@@ -15,7 +15,7 @@
     echo("<hr />");
     require_once('conn.php');;
     $result=$conn->query($sql);//mysql
-        $sql='SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2'
+        $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2');
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
