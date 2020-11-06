@@ -170,7 +170,7 @@
             }
         echo("</table>");
 echo("<hr />");
-$sql=('SELECT count(imie) from pracownicy where imie like "%a" and dzial=1 or dzial=3');
+$sql=('SELECT count(imie)as ilosc from pracownicy where imie like "%a" and dzial=1 or dzial=3');
     $result=$conn->query($sql); //mysql
         echo("<h3>ZAD 7</h3>");//nazwa nad tabelą
         echo("<table border=1>");
@@ -178,7 +178,7 @@ $sql=('SELECT count(imie) from pracownicy where imie like "%a" and dzial=1 or dz
         echo("<th>ilosc</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['imie']."</td>");
+                    echo("<td>".$row['ilosc']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
