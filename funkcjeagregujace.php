@@ -336,6 +336,22 @@ echo("<hr />");
                         echo("</table>");
                         echo("<hr />");
 
+                        echo("<h3>Najmłodsi pracownicy z działu: handel i serwis (Imię, nazwa_dział, wiek)*</h3>");
+                        $sql=('SELECT imie,min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy,organizacja where id_org=dzial and dzial="handel" or dzial="serwis" group by dzial');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>imie</th>");
+                        echo("<th>wiek</th>");
+                        echo("<th>nazwa działu</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td><td>".$row['nazwa_dzial']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
+
                         echo("<h3>Długość życia pracowników w dniach</h3>");
                         $sql=('SELECT imie,DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy');
                     $result=$conn->query($sql);//mysql
