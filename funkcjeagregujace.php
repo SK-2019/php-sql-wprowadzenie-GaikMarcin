@@ -195,7 +195,7 @@ echo("<hr />");
         echo("</table>");
         echo("<hr>");
 
-        $sql=('SELECT avg(zarobki)as suma from pracownicy, organizacja WHERE imie not like "%a" GROUP BY nazwa_dzial HAVING avg(zarobki) > 30');
+        $sql=('SELECT avg(zarobki)as suma,nazwa_dzial from pracownicy, organizacja WHERE imie not like "%a" GROUP BY nazwa_dzial HAVING avg(zarobki) > 30');
     $result=$conn->query($sql); //mysql
             echo("<h3>Średnie zarobków mężczyzn w poszczególnych działach większe od 30</h3>");//nazwa nad tabelą
             echo("<table border=1>");
