@@ -192,7 +192,7 @@
                 echo("<h2>Limit</h2>");
                 echo("<hr />");
 
-                cho("<h3>Dwóch najlepiej zarabiających pracowników z działu 4</h3>");
+                echo("<h3>Dwóch najlepiej zarabiających pracowników z działu 4</h3>");
         $sql=('SELECT * From pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2');
             $result=$conn->query($sql);//mysql
                 echo("<table border=1>");
