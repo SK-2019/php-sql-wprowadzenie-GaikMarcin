@@ -311,12 +311,11 @@ echo("<hr />");
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
-                        echo("<th>imie</th>");
                         echo("<th>wiek</th>");
                         echo("<th>nazwa działu</th>");
                             while($row=$result->fetch_assoc()){
                                 echo("<tr>");
-                                    echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td><td>".$row['nazwa_dzial']."</td>");
+                                    echo("<td>".$row['wiek']."</td><td>".$row['nazwa_dzial']."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
