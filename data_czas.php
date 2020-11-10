@@ -202,7 +202,7 @@
                         echo("</table>");
                         echo("<hr />");
 
-                        echo("<h3>Najstarszy pracownik</h3>");
+                        echo("<h3>Najstarszy mężczyzna</h3>");
                 $sql=('SELECT * From pracownicy, organizacja where imie not like "%a" and dzial=id_org order by data_urodzenia asc limit 1');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
