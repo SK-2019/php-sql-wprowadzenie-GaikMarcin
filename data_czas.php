@@ -13,6 +13,7 @@
 <h1>Marcin Gaik 2Ti</h1>  
 <h2>Data i Czas</h2>  
 <?php
+                        require_once('conn.php');
                         echo("<hr>");
                         echo("<h3>Wiek poszczególnych pracowników (w latach)</h3>");
             $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org');
