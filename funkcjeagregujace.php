@@ -180,9 +180,9 @@ echo("<hr />");
             echo("<hr />");
 
             
-            $sql=('SELECT nazwa_dzial,sum(zarobki) from pracownicy,organizacja where dzial=id_org group by dzial having sum(zarobki)<28');
+            $sql=('SELECT sum(zarobki) as suma,nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28 ');
     $result=$conn->query($sql); //mysql
-        echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28</h3>");//nazwa nad tabelą
+        echo("<h3>Średnie zarobków w poszczególnych działach</h3>");//nazwa nad tabelą
         echo("<table border=1>");
         echo("<li>SQL: $sql");
         echo("<th>suma</th>");
@@ -193,5 +193,5 @@ echo("<hr />");
                 echo("</tr>");
             }
         echo("</table>");
-echo("<hr />");
+        echo("<hr>");
 ?>
