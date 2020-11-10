@@ -322,7 +322,7 @@ echo("<hr />");
                         echo("<hr />");
 
                         echo("<h3>Najmłodsi pracownicy z działu: handel i serwis (nazwa_dział, wiek)</h3>");
-                        $sql=('SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy,organizacja where dzial=id_org and nazwa_dzial="handel" or nazwa_dzial="serwis" group by dzial');
+                        $sql=('SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy,organizacja where dzial=id_org and nazwa_dzial="handel" and nazwa_dzial="serwis" group by dzial');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
@@ -337,7 +337,7 @@ echo("<hr />");
                         echo("<hr />");
 
                         echo("<h3>Najmłodsi pracownicy z działu: handel i serwis (Imię, nazwa_dział, wiek)*</h3>");
-                        $sql=('SELECT imie,min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy,organizacja where dzial=id_org and nazwa_dzial="handel" or nazwa_dzial="serwis" group by dzial');
+                        $sql=('SELECT imie,min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy,organizacja where dzial=id_org and nazwa_dzial="handel" and nazwa_dzial="serwis" group by dzial');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
