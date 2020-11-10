@@ -231,7 +231,7 @@
                 echo("<hr />");
                 
                 echo("<h3>Najstarszy pracownik</h3>");
-                $sql=('SELECT * From pracownicy, organizacja where dzial=id_org order by data_urodzenia desc limit 1');
+                $sql=('SELECT * From pracownicy, organizacja where dzial=id_org order by data_urodzenia asc limit 1');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
