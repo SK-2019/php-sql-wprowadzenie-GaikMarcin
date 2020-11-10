@@ -275,4 +275,19 @@ echo("<hr />");
                             }
                         echo("</table>");
                         echo("<hr />");
+
+                        echo("<h3>Średnia lat pracowników w poszczególnych działach</h3>");
+                        $sql=('SELECT avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia from pracownicy group by nazwa_dzial');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>Średnia</th>");
+                        echo("<th>nazwa_dzial</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['srednia']."</td><td>".$row['nazwa_dzial']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
 ?>
