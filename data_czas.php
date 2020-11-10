@@ -218,3 +218,4 @@ echo("<h3>Wiek poszczególnych pracowników (w latach)</h3>");
                             }
                         echo("</table>");
                         echo("<hr />");
+?>
