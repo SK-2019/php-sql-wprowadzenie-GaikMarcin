@@ -247,4 +247,32 @@ echo("<hr />");
                             }
                         echo("</table>");
                         echo("<hr />");
+
+                        echo("<h3>Suma lat kobiet</h3>");
+                        $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy where imie like "%a"');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>Suma</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['Suma']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
+
+                        echo("<h3>Suma lat mężczyzn</h3>");
+                        $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy where imie not like "%a"');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>Suma</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['Suma']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
 ?>
