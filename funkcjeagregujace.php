@@ -335,4 +335,19 @@ echo("<hr />");
                             }
                         echo("</table>");
                         echo("<hr />");
+
+                        echo("<h3>Długość życia pracowników w dniach</h3>");
+                        $sql=('SELECT imie,DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>imię</th>");
+                        echo("<th>dni życia</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['imie']."</td><td>".$row['dni_zycia']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
 ?>
