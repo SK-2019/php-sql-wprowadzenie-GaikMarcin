@@ -180,7 +180,7 @@ echo("<hr />");
             echo("<hr />");
 
             
-            $sql=('SELECT sum(zarobki)as suma from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28 ');
+            $sql=('SELECT sum(zarobki),nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28 ');
     $result=$conn->query($sql); //mysql
         echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28</h3>");//nazwa nad tabelą
         echo("<table border=1>");
@@ -189,13 +189,13 @@ echo("<hr />");
         echo("<th>nazwa działu</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
         echo("<hr>");
 
-        $sql=('SELECT avg(zarobki),nazwa_dzial from pracownicy, organizacja WHERE imie not like "%a" GROUP BY dzial HAVING avg(zarobki) > 28');
+        $sql=('SELECT avg(zarobki),nazwa_dzial from pracownicy, organizacja WHERE imie not like "%a" GROUP BY dzial HAVING avg(zarobki) > 30');
     $result=$conn->query($sql); //mysql
             echo("<h3>Średnie zarobków mężczyzn w poszczególnych działach większe od 30</h3>");//nazwa nad tabelą
             echo("<table border=1>");
@@ -204,7 +204,22 @@ echo("<hr />");
             echo("<th>nazwa działu</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
+                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
+                    echo("</tr>");
+                }
+            echo("</table>");
+            echo("<hr>");
+
+            $sql=('SELECT count(id_pracownicy),nazwa_dzial from pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING count(id_pracownicy) > 3');
+    $result=$conn->query($sql); //mysql
+            echo("<h3>Ilość pracowników w poszczególnych działach większa od 3</h3>");//nazwa nad tabelą
+            echo("<table border=1>");
+            echo("<li>SQL: $sql");
+            echo("<th>suma</th>");
+            echo("<th>nazwa działu</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
                     echo("</tr>");
                 }
             echo("</table>");
