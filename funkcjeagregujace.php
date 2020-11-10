@@ -201,7 +201,7 @@ echo("<hr />");
                         echo("<hr />");
 
                         echo("<h3>Wiek poszczególnych pracowników (w latach) z działu serwis</h3>");
-                        $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy');
+                        $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org and nazwa_dzial=serwis');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
