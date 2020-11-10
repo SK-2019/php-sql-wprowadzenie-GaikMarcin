@@ -210,12 +210,12 @@ echo("<hr />");
             echo("</table>");
             echo("<hr>");
 
-            $sql=('SELECT count(id_pracownicy),nazwa_dzial from pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING count(id_pracownicy) > 3');
+            $sql=('SELECT count(id_pracownicy)as suma,nazwa_dzial from pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING count(id_pracownicy) > 3');
     $result=$conn->query($sql); //mysql
             echo("<h3>Ilość pracowników w poszczególnych działach większa od 3</h3>");//nazwa nad tabelą
             echo("<table border=1>");
             echo("<li>SQL: $sql");
-            echo("<th>suma</th>");
+            echo("<th>ilość</th>");
             echo("<th>nazwa działu</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
