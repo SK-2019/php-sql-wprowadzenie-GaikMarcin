@@ -180,7 +180,7 @@ echo("<hr />");
             echo("<hr />");
 
             
-            $sql=('SELECT nazwa_dzial,sum(zarobki)as suma from pracownicy, organizacja where dzial=id_org GROUP BY dzial HAVING sum(zarobki) < 28 ');
+            $sql=('SELECT nazwa_dzial,sum(zarobki)as suma from pracownicy, organizacja where dzial=id_org GROUP BY nazwa_dzial HAVING sum(zarobki) < 28 ');
     $result=$conn->query($sql); //mysql
         echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28</h3>");//nazwa nad tabelą
         echo("<table border=1>");
@@ -195,7 +195,7 @@ echo("<hr />");
         echo("</table>");
         echo("<hr>");
 
-        $sql=('SELECT nazwa_dzial,avg(zarobki)as suma from pracownicy, organizacja WHERE imie not like "%a" GROUP BY dzial HAVING avg(zarobki) > 30');
+        $sql=('SELECT nazwa_dzial,avg(zarobki)as suma from pracownicy, organizacja WHERE imie not like "%a" GROUP BY nazwa_dzial HAVING avg(zarobki) > 30');
     $result=$conn->query($sql); //mysql
             echo("<h3>Średnie zarobków mężczyzn w poszczególnych działach większe od 30</h3>");//nazwa nad tabelą
             echo("<table border=1>");
