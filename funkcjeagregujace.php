@@ -228,7 +228,7 @@ echo("<hr />");
                         echo("<th>Suma</th>");
                             while($row=$result->fetch_assoc()){
                                 echo("<tr>");
-                                    echo("<td>".$row['suma']."</td>");
+                                    echo("<td>".$row['Suma']."</td>");
                                 echo("</tr>");
                             }
                         echo("</table>");
