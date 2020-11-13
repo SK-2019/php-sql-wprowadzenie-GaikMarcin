@@ -2,13 +2,45 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
-<div class="nav">
-    <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
-    <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
-    <a class="nav_link" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
-    <a class="nav_link" href="data_czas.php">Data i Czas</a>
-</div>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: gray;
+}
+
+.active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="pracownicy.php">Pracownicy - Wstęp</a></li>
+  <li><a href="funkcjeagregujace.php">Funkcje Agregujące</a></li>
+  <li><a href="pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
+  <li><a href="data_czas.php">Data i Czas</a></li>
+  <li style="float:right"><a class="active" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin">GitHub</a></li>
+</ul>
 </head>
 <body>
    <h1>Marcin Gaik 2Ti</h1>
