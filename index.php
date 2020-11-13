@@ -28,7 +28,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: red;
+  background-color: yellow;
 }
 </style>
 </head>
