@@ -226,7 +226,7 @@
             echo("<hr />");
 
                         echo("<h3>Wyświetl nazwy dni w dacie urodzenia</h3>");
-            $sql=('SELECT *, DATE_FORMAT(data_urodzenia,"%W") from pracownicy,organizacja where dzial=id_org');
+            $sql=('SELECT *, DATE_FORMAT(data_urodzenia,"-D") from pracownicy,organizacja where dzial=id_org');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
