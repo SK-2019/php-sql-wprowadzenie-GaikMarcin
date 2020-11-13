@@ -8,7 +8,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: lightgrey;
+  background-color: #333;
 }
 
 li {
@@ -19,7 +19,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 16px;
   text-decoration: none;
 }
 
