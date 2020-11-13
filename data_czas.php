@@ -225,8 +225,8 @@
                         echo("<h2>Formatowanie Dat</h2>");
             echo("<hr />");
 
-                        echo("<h3>Najstarszy mężczyzna</h3>");
-            $sql=('SELECT *, DATE_FORMAT(data_urodzenia,"%W-%m-%Y") from pracownicy');
+                        echo("<h3>Wyświetl nazwy dni w dacie urodzenia</h3>");
+            $sql=('SELECT *, DATE_FORMAT(data_urodzenia,"%W-%m-%Y") from pracownicy,organizacja where dzial=id_org');
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
