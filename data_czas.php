@@ -225,19 +225,5 @@
                         echo("<h2>Formatowanie Dat</h2>");
             echo("<hr />");
 
-                        echo("<h3>Obecna, dokładna godzina (z dokładnością do milisekund)</h3>");
-            $sql=('SELECT curtime(4)');
-                    $result=$conn->query($sql);//mysql
-                        echo("<table border=1>");
-                        echo("<li>SQL: $sql");
-                        echo("<th>data i godzina</th>");
-                            while($row=$result->fetch_assoc()){
-                                echo("<tr>");
-                                    echo("<td>".$row['data_urodzenia']."</td>");
-                                echo("</tr>");
-                            }
-                        echo("</table>");
-                        echo("<hr />");
-
 
 ?>
