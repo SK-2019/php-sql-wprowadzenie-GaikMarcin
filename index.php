@@ -17,7 +17,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: green;
   text-align: center;
   padding: 5px 16px;
   text-decoration: none;
