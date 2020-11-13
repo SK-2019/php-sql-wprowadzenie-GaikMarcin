@@ -71,7 +71,7 @@
                         echo("<hr />");
                         
                         echo("<h3>Suma lat pracowników z działu handel</h3>");
-                        $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja where nazwa_dzial="handel"');
+                        $sql=("SELECT sum(year(curdate())-year(data_urodzenia)) as Suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org and nazwa_dzial='handel'");
                     $result=$conn->query($sql);//mysql
                         echo("<table border=1>");
                         echo("<li>SQL: $sql");
