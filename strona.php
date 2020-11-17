@@ -2,6 +2,6 @@
 
 echo("jesteś na stronie.php")
 
-echo($_POST["name"]);
+echo($_POST["imie"]);
 
 ?>
