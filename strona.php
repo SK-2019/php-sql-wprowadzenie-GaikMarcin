@@ -1,7 +1,7 @@
 <?php
 
-echo("<li>jesteś na stronie.php");
+echo("jesteś na stronie.php");<br>
 
-echo("<li>"$_POST["imie"]);
+echo($_POST["imie"]);<br>
 
 ?>
