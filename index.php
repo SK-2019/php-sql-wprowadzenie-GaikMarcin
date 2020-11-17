@@ -10,6 +10,10 @@
     <a class="nav_link" href="data_czas.php">Data i Czas</a>
 </div>
 </head>
+<form action="strona.php" method="POST">
+     <input type="text" name="asd"></br>
+     <input type="submit" value="wyślij do strona.php">
+  </form>
 <body>
    <h1>Marcin Gaik 2Ti</h1>
 <?php
