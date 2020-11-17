@@ -1,9 +1,9 @@
 <?php
 
-echo("jesteś na stronie.php");<br>
-
-echo($_POST["imie"]);<br>
-
-echo($_POST["nazwisko"]);<br>
+echo("jesteś na stronie.php");
+echo("<br>");
+echo($_POST["imie"]);
+echo("<br>");
+echo($_POST["nazwisko"]);
 
 ?>
