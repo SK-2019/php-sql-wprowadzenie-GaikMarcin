@@ -12,7 +12,7 @@
 </head>
 <body>
    <h1>Marcin Gaik 2Ti</h1>
-   <form action="index.php" method="POST">
+   <form action="strona.php" method="POST">
      <input type="text" name="asd"></br>
      <input type="submit" value="wyślij do strona.php">
   </form>
