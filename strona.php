@@ -5,8 +5,8 @@
 
 echo("jesteś na stronie.php");
 echo("<br>");
-echo("<li>imię:.$_POST["imie"]");
+echo("<li>imię:"$_POST["imie"]);
 echo("<br>");
-echo("<li>imię:.$_POST["nazwisko"]");
+echo("<li>nazwisko:"$_POST["nazwisko"]);
 
 ?>
