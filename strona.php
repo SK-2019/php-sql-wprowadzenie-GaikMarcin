@@ -7,7 +7,7 @@ echo("<li>imię:".$_POST["imie"]);
 echo("<li>nazwisko:".$_POST["nazwisko"]);
 
    require_once('conn.php');
-  $sql = "INSERT INTO MyGuests (imie, nazwisko)
+  $sql = "INSERT INTO pracownicy (imie, nazwisko)
   VALUES ('John', 'Doe')";
   
   if ($conn->query($sql) === TRUE) {
