@@ -3,7 +3,7 @@
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 
    <div class="nav">
-    <<a class="nav_link" href="index.php">Strona Główna</a> 
+    <a class="nav_link" href="index.php">Strona Główna</a> 
     <form action="strona.php" method="POST">
    <input type="text" name="imie" placeholder="Imie">
    <br><input type="text" name="dzial" placeholder="Dzial">
