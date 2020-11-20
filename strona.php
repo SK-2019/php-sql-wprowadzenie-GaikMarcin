@@ -24,3 +24,4 @@ echo("<li>data urodzenia:".$_POST["data_"]);
   }
  $conn->close();
  ?>
+ 
