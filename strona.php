@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="style1.css">
+<a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
+<div class="nav">
+    <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
+    <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+    <a class="nav_link" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
+    <a class="nav_link" href="data_czas.php">Data i Czas</a>
+    <a class="nav_link" href="formularz.php">Formularze</a>
+</div>
 <?php
 
 echo("jesteś na stronie.php");

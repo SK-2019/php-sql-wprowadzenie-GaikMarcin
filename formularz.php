@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="style1.css">
+<a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 <form action="strona.php" method="POST">
    <input type="text" name="imie" placeholder="Imie">
    <br><input type="text" name="dzial" placeholder="Dzial">
@@ -6,7 +8,12 @@
    <br><input type="date" name="data_">
    <input type="submit" value="Dodaj">
    </form>
-
+   <div class="nav">
+    <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
+    <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
+    <a class="nav_link" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
+    <a class="nav_link" href="data_czas.php">Data i Czas</a>
+</div>
 </html>
 <?php
 require_once("conn.php");
