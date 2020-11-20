@@ -18,7 +18,7 @@ echo("<li>data urodzenia:".$_POST["data_"]);
   }
  
 
-  require_once("connect.php");
+  
     $result=$conn->query("Select * from pracownicy");
                 echo("<table border=1>");
                     echo("<th>Id</th>");
