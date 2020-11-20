@@ -16,7 +16,7 @@ echo("<li>data urodzenia:".$_POST["data_"]);
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
-  $conn->close();
+ 
 
   $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
@@ -35,4 +35,5 @@ echo("<li>data urodzenia:".$_POST["data_"]);
                     echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
                 echo("</tr>");
             }
-?>
+ $conn->close();
+ ?>
