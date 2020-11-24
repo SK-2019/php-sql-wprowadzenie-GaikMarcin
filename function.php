@@ -23,4 +23,23 @@ function petla(){
     }
 }
 petla();
+
+function robot($sql){
+    require_once("conn.php");
+    $result=$conn->query($sql);
+        echo("<table border=1>");
+        echo("<h3>ZAD $nr_zad</h3>");
+        echo("<li>SQL: $sql");
+        echo("<th>id</th>");
+        echo("<th>imię</th>");
+        echo("<th>dział</th>");
+        echo("<th>zarobki</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+        }
+robot(1,'SELECT * FROM pracownicy');
 ?>
