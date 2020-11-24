@@ -28,7 +28,6 @@ function robot($sql){
     require_once("conn.php");
     $result=$conn->query($sql);
         echo("<table border=1>");
-        echo("<h3>ZAD $nr_zad</h3>");
         echo("<li>SQL: $sql");
         echo("<th>id</th>");
         echo("<th>imię</th>");
@@ -41,5 +40,5 @@ function robot($sql){
             }
         echo("</table>");
         }
-robot(1,'SELECT * FROM pracownicy');
+robot('SELECT * FROM pracownicy');
 ?>
