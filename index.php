@@ -9,6 +9,7 @@
     <a class="nav_link" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
     <a class="nav_link" href="data_czas.php">Data i Czas</a>
     <a class="nav_link" href="insert.php">Formularz</a>
+    <a class="nav_link" href="function.php">Function</a>
 </div>
 </head>
 <body>
