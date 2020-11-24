@@ -28,7 +28,7 @@ function robot($sql){
     require_once("conn.php");
     $result=$conn->query($sql);
         echo("<table border=1>");
-        echo("<li>SQL: $sql");
+        echo("<h3>SQL: $sql");
         echo("<th>id</th>");
         echo("<th>imię</th>");
         echo("<th>dział</th>");
