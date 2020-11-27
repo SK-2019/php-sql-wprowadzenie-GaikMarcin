@@ -5,7 +5,7 @@
    <div class="nav">
     <a class="nav_link" href="index.php">Strona Główna</a> 
     <form action="strona.php" method="POST">
-    <h1>Dodaj :</h1>
+    <h3>Dodaj :</h3>
    <input type="text" name="imie" placeholder="Imie">
    <br><input type="text" name="dzial" placeholder="Dzial">
    <br><input type="text" name="zarobki" placeholder="Zarobki">
@@ -15,7 +15,7 @@
 </div>
 </html>
 
-<h1>Usuń :</h1>
+<h3>Usuń :</h3>
        
 <form action="delete.php" method="POST">
        <input type="text" name="id" placeholder="ID"></br>
