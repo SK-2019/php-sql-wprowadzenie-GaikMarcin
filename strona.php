@@ -22,7 +22,8 @@ echo("<li>data urodzenia:".$_POST["data_"]);
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
- $conn->close();
+ 
+ 
  $sql=('SELECT * FROM pracownicy');
     $result=$conn->query($sql);
         echo("<hr />");
@@ -38,5 +39,6 @@ echo("<li>data urodzenia:".$_POST["data_"]);
                 echo("</tr>");
             }
         echo("</table>");
- ?>
+$conn->close(); 
+?>
  
