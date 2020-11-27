@@ -5,6 +5,7 @@
    <div class="nav">
     <a class="nav_link" href="index.php">Strona Główna</a> 
     <form action="strona.php" method="POST">
+    <h1>Dodaj :</h1>
    <input type="text" name="imie" placeholder="Imie">
    <br><input type="text" name="dzial" placeholder="Dzial">
    <br><input type="text" name="zarobki" placeholder="Zarobki">
