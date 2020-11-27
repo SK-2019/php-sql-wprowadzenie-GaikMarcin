@@ -23,6 +23,8 @@
 </form>
 <?php
 require_once("conn.php");
+
+echo("<h3>Wszyscy Pracownicy</h3>");
 $result=$conn->query("Select * from pracownicy");
 echo("<table border=1>");
     echo("<th>Id</th>");
