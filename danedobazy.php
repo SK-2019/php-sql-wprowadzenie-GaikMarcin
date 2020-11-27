@@ -13,6 +13,13 @@
    </form> 
 </div>
 </html>
+
+<h1>Usuń :</h1>
+       
+<form action="delete.php" method="POST">
+       <input type="text" name="id" placeholder="ID"></br>
+   <input type="submit" value="usun">
+</form>
 <?php
 require_once("conn.php");
 $result=$conn->query("Select * from pracownicy");
