@@ -8,7 +8,7 @@
 </div>
 <?php
 
-echo("jesteś na stronie.php");
+
 echo("<li>imię:".$_POST["imie"]);
 echo("<li>dział:".$_POST["dzial"]);
 echo("<li>zarobki:".$_POST["zarobki"]);
