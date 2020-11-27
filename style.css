@@ -59,7 +59,9 @@
   }
   a {
     color: yellow;
+    text-decoration: none;
   }
   .nav_link{
     color: lightgreen;
   }
+  
