@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style1.css">
     <div class="nav">
     <a class="nav_link" href="index.php">Strona Główna</a> 
-    <form action=".php" method="POST">
+    <form action="insert.php" method="POST">
     <h3>Dodaj :</h3>
    <br><input type="text" name="tytul"placeholder="tytul">
    <br><input type="text" name="imie" placeholder="imie">
