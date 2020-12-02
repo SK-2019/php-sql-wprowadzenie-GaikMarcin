@@ -14,12 +14,6 @@
    <br><input type="text" name="nazwisko" placeholder="nazwisko">
    <input type="submit" value="Dodaj">
    </form> 
-   <h3>Usuń :</h3>
-       
-<form action="delete1.php" method="POST">
-       <input type="text" name="id" placeholder="ID"></br>
-   <input type="submit" value="usun">
-</form>
 </head>
 <body>
 <?php
@@ -34,7 +28,7 @@ echo("<th>Usuń</th>");
     while($row=$result->fetch_assoc()){
         echo("<tr>");
         echo("<td>".$row['id']."</td><td>".$row['tytul']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");
-        echo("<td><form action=delete.php method=POST>");
+        echo("<td><form action=delete1.php method=POST>");
             echo("<input type='hidden' name='id' value=".$row['id'].">");
             echo("<input type=submit value=X>");
             echo("</form></td>");
