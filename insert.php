@@ -22,5 +22,5 @@ while($row2=$result2->fetch_assoc()){
 $sql_krzyz="INSERT INTO `BiblKrzyz`(`id_krzyz`, `id_tytul`, `id_autor`) VALUES (null,'$tytul_id','$autor_id')";
 mysqli_query($conn,$sql_krzyz);
 }
-header("location:http://php-marcin-gaik.herokuapp.com/biblioteka.php");
+
 ?>
