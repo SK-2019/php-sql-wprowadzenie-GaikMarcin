@@ -1,6 +1,7 @@
 <?php
 require_once("conn.php");
-$sql =  "DELETE FROM biblkrzyz where id_krzyz='".$_POST['id']."'";
+$id=$_POST['id'];
+$sql="DELETE FROM biblkrzyz where id_krzyz='$id'";
 echo($sql);
 mysqli_query($conn,$sql);
 mysqli_close($conn);

@@ -29,7 +29,7 @@ echo("<th>Usuń</th>");
         echo("<tr>");
         echo("<td>".$row['id']."</td><td>".$row['tytul']."</td><td>".$row['imie']."</td><td>".$row['nazwisko']."</td>");
         echo("<td><form action=delete1.php method=POST>");
-            echo("<input type='hidden' name='id' value=".$row['id'].">");
+            echo("<input type='hidden' name='id' value=".$row['id_krzyz'].">");
             echo("<input type=submit value=X>");
             echo("</form></td>");
         echo("</tr>");
