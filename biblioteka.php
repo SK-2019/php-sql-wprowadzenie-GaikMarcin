@@ -11,7 +11,7 @@
     <h3>Dodaj :</h3>
    <br><input type="text" name="tytul"placeholder="tytul">
    <br><input type="text" name="imie" placeholder="imie">
-   <br><input type="text" name="nazwisko" placeholder="nazwisko">
+   <br><input type="text" name="nazwisko" placeholder="nazwisko"><br>
    <input type="submit" value="Dodaj">
    </form> 
 </head>
