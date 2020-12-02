@@ -10,6 +10,7 @@ $dodaj2=mysqli_query($conn,$sql_tytul);
 if($dodaj1 && $dodaj2){
 $sql_autor2="SELECT id_autor from BiblAutor where nazwisko='$nazwisko'";
 $result1=$conn->query($sql_autor2);
+echo($sql_autor2);
 while($row1=$result1->fetch_assoc()){
     $autor_id=$row['id_autor'];
 }
