@@ -14,7 +14,7 @@ echo($sql_autor2);
 while($row1=$result1->fetch_assoc()){
     $autor_id=$row['id_autor'];
 }
-
+echo($autor_id);
 $sql_tytul2="SELECT id_tytul from BiblTytul where tytul='$tytul'";
 $result2=$conn->query($sql_tytul2);
 while($row2=$result2->fetch_assoc()){
