@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 <div class="nav">
     <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
@@ -16,7 +16,7 @@
 <body>
    <h1>Marcin Gaik 2Ti</h1>
 <?php
-   require_once('conn.php');
+   require_once('/conn.php');
   
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);

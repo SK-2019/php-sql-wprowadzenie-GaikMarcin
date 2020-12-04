@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="/style1.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 <div class="nav">
     <a class="nav_link" href="index.php">Strona Główna</a>    
@@ -15,7 +15,7 @@
 <h2>Funkcje Agregujące</h2>  
 <?php
              echo("<hr />");
-             require_once('conn.php');
+             require_once('/conn.php');
             $sql=('SELECT sum(zarobki) as suma from pracownicy');
             $result=$conn->query($sql); //mysql
                 echo("<h3>Suma zarobków wszystkich pracowników</h3>");//nazwa nad tabelą

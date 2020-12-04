@@ -22,7 +22,7 @@
    <input type="submit" value="usun">
 </form>
 <?php
-require_once("conn.php");
+require_once("/conn.php");
 
 echo("<h3>Wszyscy Pracownicy</h3>");
 $result=$conn->query("Select * from pracownicy");

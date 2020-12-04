@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="/style1.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 
    <div class="nav">
@@ -25,7 +25,7 @@ function petla(){
 petla();
 
 function robot($sql){
-    require_once("conn.php");
+    require_once("/conn.php");
     $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<h3>SQL: $sql");
