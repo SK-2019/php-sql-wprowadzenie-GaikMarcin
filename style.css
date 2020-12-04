@@ -1,0 +1,67 @@
+/* body {
+    background-color: lightblue;
+  } */
+  table, th, td {
+    border: 4px solid black;
+  }
+  td {
+    text-align: center;
+    background-color: lightblue;
+    color:blaCK;
+  }
+  th {
+    background-color: blue;
+    color: white;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  #grad {
+    background-image: linear-gradient(to bottom right blue,red);
+  }
+  body {
+    /* height: 10000px; */
+    background-image: linear-gradient(to bottom right, blue, red, yellow);
+  }
+  hr {
+    border: 2px solid black;
+  }
+  h1 {
+    font-size:40px; 
+    margin: 20px auto;
+    font-family:helvetica; 
+    text-align:center;
+  }
+  th {
+    margin: 20px auto;
+    font-family:helvetica; 
+    text-align:center;
+  }
+  td {
+    margin: 20px auto;
+    font-family:helvetica; 
+    text-align:center;
+  }
+  table {
+    margin: 20px auto;
+    font-family:helvetica; 
+    text-align:center;
+  }
+  h3 {
+    margin: 20px auto;
+    font-family:helvetica; 
+    text-align:center;
+  }
+  li {
+    margin: 20px auto;
+    font-family:helvetica; 
+    text-align:center;
+  }
+  a {
+    color: yellow;
+    text-decoration: none;
+  }
+  .nav_link{
+    color: lightgreen;
+  }
+  
