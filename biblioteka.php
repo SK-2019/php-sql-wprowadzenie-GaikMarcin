@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style1.css">
-    <div class="nav">
-    <a class="nav_link" href="index.php">Strona Główna</a> 
-    <form action="insert.php" method="POST">
-    <h3>Dodaj :</h3>
-   <br><input type="text" name="tytul"placeholder="tytul">
-   <br><input type="text" name="imie" placeholder="imie">
-   <br><input type="text" name="nazwisko" placeholder="nazwisko"><br>
-   <input type="submit" value="Dodaj">
-   </form> 
+    
 </head>
 <body>
 <?php
