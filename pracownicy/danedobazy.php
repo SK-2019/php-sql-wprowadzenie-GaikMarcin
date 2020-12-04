@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="/style1.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 
    <div class="nav">
-    <a class="nav_link" href="index.php">Strona Główna</a> 
+    <a class="nav_link" href="/index.php">Strona Główna</a> 
     <form action="strona.php" method="POST">
     <h3>Dodaj :</h3>
    <input type="text" name="imie" placeholder="Imie">
