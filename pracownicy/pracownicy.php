@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="/style1.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 <div class="nav">
-    <a class="nav_link" href="index.php">Strona Główna</a>
+    <a class="nav_link" href="/index.php">Strona Główna</a>
     <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
     <a class="nav_link" href="data_czas.php">Data i Czas</a>
@@ -16,7 +16,7 @@
 <?php
             echo("<hr />");
             echo("<h3>Pracownicy tylko z działu 2</h3>");
-            require_once('/conn.php');
+            require_once('../conn.php');
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and dzial=2 group by nazwa_dzial');
         $result=$conn->query($sql);//mysql
             echo("<table border=1>");
