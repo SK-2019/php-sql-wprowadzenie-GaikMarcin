@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php
-require_once("/conn.php");
+require_once("../conn.php");
 $result=$conn->query('SELECT id_krzyz as id,tytul,imie,nazwisko FROM `BiblKrzyz`,BiblTytul,BiblAutor where BiblAutor.id_autor=BiblKrzyz.id_autor and BiblTytul.id_tytul=BiblKrzyz.id_tytul');
 echo("<table border=1>");
 echo("<th>id</th>");
