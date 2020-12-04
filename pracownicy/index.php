@@ -10,7 +10,7 @@
     <a class="nav_link" href="data_czas.php">Data i Czas</a>
     <a class="nav_link" href="danedobazy.php">DaneDoBazy</a>
     <a class="nav_link" href="function.php">Function</a>
-    <a class="nav_link" href="ksiazki/biblioteka.php">Biblioteka</a>
+    <a class="nav_link" href="biblioteka.php">Biblioteka</a>
 </div>
 </head>
 <body>
