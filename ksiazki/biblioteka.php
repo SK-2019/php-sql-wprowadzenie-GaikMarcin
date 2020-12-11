@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style1.css">
-    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
+    <link rel="stylesheet" href="style1.css">
     <div class="nav">
-    <a class="nav_link" href="/index.php">Strona Główna</a> 
-    <a class="nav_link" href="insert.php">Insert</a> 
+    <a class="nav_link" href="index.php">Strona Główna</a> 
+    <form action="insert.php" method="POST">
+    <h3>Dodaj :</h3>
+   <br><input type="text" name="tytul"placeholder="tytul">
+   <br><input type="text" name="imie" placeholder="imie">
+   <br><input type="text" name="nazwisko" placeholder="nazwisko"><br>
+   <input type="submit" value="Dodaj">
+   </form> 
 </head>
 <body>
 <?php
-require_once("../conn.php");
+require_once("conn.php");
 $result=$conn->query('SELECT id_krzyz as id,tytul,imie,nazwisko FROM `BiblKrzyz`,BiblTytul,BiblAutor where BiblAutor.id_autor=BiblKrzyz.id_autor and BiblTytul.id_tytul=BiblKrzyz.id_tytul');
 echo("<table border=1>");
 echo("<th>id</th>");
