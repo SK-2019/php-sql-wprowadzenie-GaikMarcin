@@ -14,7 +14,7 @@
 		<option value="4">Dział 4 - IT</option>
     </select>
    <br><input type="text" name="zarobki" placeholder="Zarobki">
-   <br><input type="date" name="data_">
+   <br><input type="date" name="data_"><br>
    <input type="submit" value="Dodaj">
    </form> 
 </div>
