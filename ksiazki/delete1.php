@@ -1,5 +1,5 @@
 <?php
-require_once("/conn.php");
+require_once("../conn.php");
 $sql =  "DELETE FROM BiblKrzyz where id_krzyz='".$_POST['id']."'";
 echo($sql);
 mysqli_query($conn,$sql);
