@@ -1,5 +1,5 @@
 <?php
-require_once('conn.php');
+require_once('../conn.php');
 $imie=$_POST['imie'];
 $nazwisko=$_POST['nazwisko'];
 $tytul=$_POST['tytul'];
@@ -22,5 +22,5 @@ while($row2=$result2->fetch_assoc()){
 $sql_krzyz="INSERT INTO `BiblKrzyz`(`id_krzyz`, `id_tytul`, `id_autor`) VALUES (null,'$tytul_id','$autor_id')";
 mysqli_query($conn,$sql_krzyz);
 }
-header("location:https://php-marcin-gaik.herokuapp.com/biblioteka.php");
+header("location:https://php-marcin-gaik.herokuapp.com/ksiazki/biblioteka.php");
 ?>
