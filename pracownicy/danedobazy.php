@@ -7,7 +7,12 @@
     <form action="strona.php" method="POST">
     <h3>Dodaj :</h3>
    <input type="text" name="imie" placeholder="Imie">
-   <br><input type="text" name="dzial" placeholder="Dzial">
+   <select name="dzial" class="field-style field-split align-right">
+        <option value="1">Dział 1 - Serwis</option>
+        <option value="2">Dział 2 - Handel</option>
+		<option value="3">Dział 3 - Marketing</option>
+		<option value="4">Dział 4 - IT</option>
+    </select>
    <br><input type="text" name="zarobki" placeholder="Zarobki">
    <br><input type="date" name="data_">
    <input type="submit" value="Dodaj">
