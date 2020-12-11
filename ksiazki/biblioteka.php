@@ -8,6 +8,7 @@
     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
     <div class="nav">
     <a class="nav_link" href="/index.php">Strona Główna</a> 
+    <a class="nav_link" href="insert.php">Insert</a> 
 </head>
 <body>
 <?php
