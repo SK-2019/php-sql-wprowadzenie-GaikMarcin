@@ -6,7 +6,7 @@
     <a class="nav_link" href="/index.php">Strona Główna</a> 
     <form action="strona.php" method="POST">
     <h3>Dodaj :</h3>
-   <input type="text" name="imie" placeholder="Imie">
+   <input type="text" name="imie" placeholder="Imie"><br>
    <select name="dzial" class="field-style field-split align-right">
         <option value="1">Dział 1 - Serwis</option>
         <option value="2">Dział 2 - Handel</option>
