@@ -3,7 +3,8 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
-<div class="nav">
+<span>&#9776</span>
+<div class="sidebar">
     <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
