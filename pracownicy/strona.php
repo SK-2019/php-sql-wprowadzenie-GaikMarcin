@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>Marcin Gaik</title>
 <link rel="stylesheet" href="../style1.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
 <span onclick="openNav()">&#9776</span>
