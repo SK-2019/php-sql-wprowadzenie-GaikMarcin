@@ -18,7 +18,7 @@
 <body>
    <h1>Marcin Gaik 2Ti</h1>
 <?php
-   require_once('conn.php');
+   require_once('assets/conn.php');
   
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
