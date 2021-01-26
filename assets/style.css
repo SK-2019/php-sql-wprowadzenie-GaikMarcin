@@ -72,10 +72,37 @@
     color: lightgreen;
   }
   .sidebar{
-height: 100%;
-width: 250px;
-position:fixed; 
-left: -250px;
-background-color: blue;
-overflow-x: hidden;
+    height: 100%;
+    width: 250px;
+    position:fixed; 
+    left: -250px;
+    background-color: blue;
+    overflow-x: hidden;
+    opacity: 0.8;
+    transition: 0.6s;
+  }
+  span{
+    cursor: pointer;
+    font-size: 35px;
+  }
+  .nav_link{
+    text-decoration: none;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-left: 3px solid none;
+    transition: 0.7s;
+    color: white;
+    padding-left: 30px;
+
+  }
+  .nav_link:hover{
+    padding-left: 50px;
+    color: green;
+    border-left: 3px solid green;
+    transition: 0.3s;
   }

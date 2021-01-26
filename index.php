@@ -2,9 +2,9 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
-<span onclick="openside()">&#9776</span>
-<div class="sidebar">
+<span onclick="openNav()">&#9776</span>
+<div class="sidebar" id="mySidenav">
+    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
     <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
@@ -113,7 +113,7 @@ function robot_sum($nr_zad, $f_sql){
 echo("<hr />");
 ?>
 <script>
-function openside(){
-    document.getElementClassName("sidebar").style.left = "0px";  
+function openNav() {
+    document.getElementById("mySidenav").style.left = "0px";
 }
 </script>
