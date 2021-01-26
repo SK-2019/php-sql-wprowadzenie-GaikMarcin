@@ -5,7 +5,7 @@
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
     <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
-    <a class="nav_link" href="../index.php">Strona Główna</a>
+    <a class="nav_link" href="../assets/index.php">Strona Główna</a>
     <a class="nav_link" href="pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
@@ -35,7 +35,7 @@
    <input type="submit" value="usun">
 </form>
 <?php
-require_once("../conn.php");
+require_once("../assets/conn.php");
 
 echo("<h3>Wszyscy Pracownicy</h3>");
 $result=$conn->query("Select * from pracownicy");

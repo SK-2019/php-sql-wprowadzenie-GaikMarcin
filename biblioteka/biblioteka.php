@@ -8,7 +8,7 @@
     <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
      <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
-     <a class="nav_link" href="../index.php">Strona Główna</a>
+     <a class="nav_link" href="../assets/index.php">Strona Główna</a>
     <a class="nav_link" href="../pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="../pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="../pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
@@ -27,7 +27,7 @@
 </head>
 <body>
 <?php
-require_once("../conn.php");
+require_once("../assets/conn.php");
 $result=$conn->query('SELECT id_krzyz as id,tytul,imie,nazwisko FROM `BiblKrzyz`,BiblTytul,BiblAutor where BiblAutor.id_autor=BiblKrzyz.id_autor and BiblTytul.id_tytul=BiblKrzyz.id_tytul');
 echo("<table border=1>");
 echo("<th>id</th>");

@@ -1,5 +1,5 @@
 <?php
-require_once('../conn.php');
+require_once('../assets/conn.php');
 $imie=$_POST['imie'];
 $nazwisko=$_POST['nazwisko'];
 $tytul=$_POST['tytul'];

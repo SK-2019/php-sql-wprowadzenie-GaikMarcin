@@ -5,7 +5,7 @@
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
     <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
-    <a class="nav_link" href="../index.php">Strona Główna</a>
+    <a class="nav_link" href="../assets/index.php">Strona Główna</a>
     <a class="nav_link" href="/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="/funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
@@ -22,7 +22,7 @@ echo("<li>dział:".$_POST["dzial"]);
 echo("<li>zarobki:".$_POST["zarobki"]);
 echo("<li>data urodzenia:".$_POST["data_"]);
 
-   require_once('../conn.php');
+   require_once('../assets/conn.php');
    $sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_']."')";
    if ($conn->query($sql) === TRUE) {
     echo("<br>"); 
