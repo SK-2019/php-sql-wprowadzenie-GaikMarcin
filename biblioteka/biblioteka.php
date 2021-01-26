@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style1.css">
-    <div class="nav">
-    <a class="nav_link" href="../index.php">Strona Główna</a> 
+    <span onclick="openNav()">&#9776</span>
+<div class="sidebar" id="mySidenav">
+    <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
+    <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
+    <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
+    <a class="nav_link" href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
+    <a class="nav_link" href="pracownicy/data_czas.php">Data i Czas</a>
+    <a class="nav_link" href="pracownicy/danedobazy.php">DaneDoBazy</a>
+    <a class="nav_link" href="pracownicy/function.php">Function</a>
+    <a class="nav_link" href="ksiazki/biblioteka.php">Biblioteka</a>
+</div>
     <form action="insert.php" method="POST">
     <h3>Dodaj :</h3>
    <br><input type="text" name="tytul"placeholder="tytul">
