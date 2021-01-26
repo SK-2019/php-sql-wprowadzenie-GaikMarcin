@@ -23,8 +23,8 @@
   table {
     border-collapse: collapse;
   }
-  #grad {
-    background-image: linear-gradient(to bottom right blue,red);
+  /* #grad {
+    background-image: linear-gradient(to bottom right blue,red); */
   }
   body {
     /* height: 10000px; */
