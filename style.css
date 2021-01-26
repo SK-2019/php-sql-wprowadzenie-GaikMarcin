@@ -28,7 +28,8 @@
   /* } */
   body {
     /* height: 10000px; */
-    background-image: linear-gradient(to bottom right, blue, red, yellow);
+    /* background-image: linear-gradient(to bottom right, blue, red, yellow); */
+    background-color: wheat;
   }
   hr {
     border: 2px solid black;
@@ -76,9 +77,10 @@
     width: 250px;
     position:fixed; 
     left: -250px;
-    background-color: blue;
+    background-color: rgb(245, 214, 157);
     overflow-x: hidden;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    border: solid 2px rgb(241, 191, 97);
     transition: 0.6s;
   }
   span{
@@ -96,13 +98,13 @@
     cursor: pointer;
     border-left: 3px solid none;
     transition: 0.7s;
-    color: white;
+    color: black;
     padding-left: 30px;
 
   }
   .nav_link:hover{
     padding-left: 50px;
-    color: green;
-    border-left: 3px solid green;
+    color:blue;
+    border-left: 3px solid blue;
     transition: 0.3s;
   }
