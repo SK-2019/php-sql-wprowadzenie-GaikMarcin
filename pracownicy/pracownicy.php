@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="../assets/style1.css">
-<title>Marcin Gaik</title>
+
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
     <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
