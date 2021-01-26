@@ -42,3 +42,15 @@ echo("</table>");
 ?>    
 </body>
 </html>
+<script>
+function openNav() {
+    if(document.getElementById("mySidenav").style.left=="-250px"){
+        document.getElementById("mySidenav").style.left = "0px"; 
+    }
+    else{
+        document.getElementById("mySidenav").style.left = "-250px"; 
+    }
+    
+}
+
+</script>
