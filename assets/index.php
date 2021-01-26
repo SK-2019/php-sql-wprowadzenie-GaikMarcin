@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
-<span>&#9776</span>
+<span onclick="openside()">&#9776</span>
 <div class="sidebar">
     <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
@@ -112,3 +112,8 @@ function robot_sum($nr_zad, $f_sql){
         robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
 echo("<hr />");
 ?>
+<script>
+function openside(){
+    document.getElementClassName("sidebar").style.left = "0px";  
+}
+</script>
