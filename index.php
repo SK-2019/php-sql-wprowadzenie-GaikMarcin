@@ -3,7 +3,7 @@
 <head>
 <title>Marcin Gaik</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/style1.css">
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
     <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
@@ -94,25 +94,25 @@ echo("<hr />");
             }
         echo("</table>");
 echo("<hr />");
-function robot_sum($nr_zad, $f_sql){
-    require_once('conn.php');
-    $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
-    $sql=$f_sql;
-    $result=$conn->query($sql);
-        echo("<table border=1>");
-        echo("<h3>ZAD $nr_zad</h3>");
-        echo("<li>SQL: $sql");
-        echo("<th>nazwa działu</th>");
-        echo("<th>suma</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma"]."</td>");
-                echo("</tr>");
-                }
-        echo("</table>");
-        }
-        robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
-echo("<hr />");
+// function robot_sum($nr_zad, $f_sql){
+//     require_once('conn.php');
+//     $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
+//     $sql=$f_sql;
+//     $result=$conn->query($sql);
+//         echo("<table border=1>");
+//         echo("<h3>ZAD $nr_zad</h3>");
+//         echo("<li>SQL: $sql");
+//         echo("<th>nazwa działu</th>");
+//         echo("<th>suma</th>");
+//             while($row=$result->fetch_assoc()){
+//                 echo("<tr>");
+//                     echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma"]."</td>");
+//                 echo("</tr>");
+//                 }
+//         echo("</table>");
+//         }
+//         robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
+// echo("<hr />");
 ?>
 <script>
 function openNav() {
