@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="../style1.css">
+<link rel="stylesheet" href="../assets/style1.css">
 
 <title>Marcin Gaik</title>
 <span onclick="openNav()">&#9776</span>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Marcin Gaik</title>
-<link rel="stylesheet" href="../style1.css">
+<link rel="stylesheet" href="../assets/style1.css">
 
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
