@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="assets/style1.css">
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
-    <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
+<link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficons-for-free.com%2Fpart%2B1%2Bgithub-1320568339880199515%2F&psig=AOvVaw34O-tzq8p893CV4Lb0ZSA-&ust=1612353858957000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIit7raUy-4CFQAAAAAdAAAAABAD" type="image/icon type">
+<a class="nav_link" target="_blank" rel="noopener noreferrer" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin">GitHub</a>
     <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
