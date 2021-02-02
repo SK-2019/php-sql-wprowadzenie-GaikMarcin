@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="../assets/style1.css">
+<link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
 <title>Marcin Gaik</title>
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">

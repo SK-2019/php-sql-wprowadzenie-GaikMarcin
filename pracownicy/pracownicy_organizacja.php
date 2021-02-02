@@ -3,7 +3,7 @@
 <head>
 <title>Marcin Gaik</title>
 <link rel="stylesheet" href="../assets/style1.css">
-    
+<link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
     <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
     <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
