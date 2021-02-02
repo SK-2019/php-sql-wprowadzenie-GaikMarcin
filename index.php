@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Marcin Gaik</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/style1.css">
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
@@ -116,12 +116,12 @@ echo("<hr />");
 ?>
 <script>
 function openNav() {
-    // if(document.getElementById("mySidenav").style.left=="-250px"){
+    if(document.getElementById("mySidenav").style.left=="-250px"){
         document.getElementById("mySidenav").style.left = "0px"; 
-    // }
-    // else{
-    //     document.getElementById("mySidenav").style.left = "-250px"; 
-    // }
+    }
+    else{
+        document.getElementById("mySidenav").style.left = "-250px"; 
+    }
     
 }
 </script>
