@@ -2,12 +2,10 @@
 <html>
 <head>
 <title>Marcin Gaik</title>
-
-<link rel="stylesheet" href="assets/style1.css">
+<link rel="stylesheet" href="assets/style.css">
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
-<link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficons-for-free.com%2Fpart%2B1%2Bgithub-1320568339880199515%2F&psig=AOvVaw34O-tzq8p893CV4Lb0ZSA-&ust=1612353858957000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIit7raUy-4CFQAAAAAdAAAAABAD" type="image/icon type">
-<a class="nav_link" target="_blank" rel="noopener noreferrer" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin">GitHub</a>
+    <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
     <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
@@ -20,7 +18,7 @@
 <body>
    <h1>Marcin Gaik 2Ti</h1>
 <?php
-   require_once('assets/conn.php');
+   require_once('conn.php');
   
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
@@ -95,25 +93,25 @@ echo("<hr />");
             }
         echo("</table>");
 echo("<hr />");
-// function robot_sum($nr_zad, $f_sql){
-//     require_once('conn.php');
-//     $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
-//     $sql=$f_sql;
-//     $result=$conn->query($sql);
-//         echo("<table border=1>");
-//         echo("<h3>ZAD $nr_zad</h3>");
-//         echo("<li>SQL: $sql");
-//         echo("<th>nazwa działu</th>");
-//         echo("<th>suma</th>");
-//             while($row=$result->fetch_assoc()){
-//                 echo("<tr>");
-//                     echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma"]."</td>");
-//                 echo("</tr>");
-//                 }
-//         echo("</table>");
-//         }
-//         robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
-// echo("<hr />");
+function robot_sum($nr_zad, $f_sql){
+    require_once('conn.php');
+    $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
+    $sql=$f_sql;
+    $result=$conn->query($sql);
+        echo("<table border=1>");
+        echo("<h3>ZAD $nr_zad</h3>");
+        echo("<li>SQL: $sql");
+        echo("<th>nazwa działu</th>");
+        echo("<th>suma</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma"]."</td>");
+                echo("</tr>");
+                }
+        echo("</table>");
+        }
+        robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
+echo("<hr />");
 ?>
 <script>
 function openNav() {
@@ -125,5 +123,4 @@ function openNav() {
     }
     
 }
-
 </script>
