@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../assets/style1.css">
+    <link rel="stylesheet" href="../style1.css">
     <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
-<a class="nav_link" target="_blank" rel="noopener noreferrer" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin">GitHub</a>
+     <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
      <a class="nav_link" href="../index.php">Strona Główna</a>
     <a class="nav_link" href="../pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="../pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
