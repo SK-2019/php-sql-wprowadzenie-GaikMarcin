@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Marcin Gaik</title>
-<link rel="stylesheet" href="assets/style1.css">
+<link rel="stylesheet" href="style.css">
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
 
 </head>
