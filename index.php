@@ -4,6 +4,9 @@
 <title>Marcin Gaik</title>
 <link rel="stylesheet" href="assets/style1.css">
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
+
+</head>
+<body>
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
     <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
@@ -15,8 +18,6 @@
     <a class="nav_link" href="pracownicy/function.php">Function</a>
     <a class="nav_link" href="biblioteka/biblioteka.php">Biblioteka</a>
 </div>
-</head>
-<body>
    <h1>Marcin Gaik 2Ti</h1>
 <?php
    require_once('assets/conn.php');
