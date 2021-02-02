@@ -73,6 +73,7 @@
     color: lightgreen;
   }
   .sidebar{
+    top: 0px;
     height: 100%;
     width: 250px;
     position:fixed; 
