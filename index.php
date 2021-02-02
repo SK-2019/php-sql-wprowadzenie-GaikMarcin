@@ -9,7 +9,8 @@
 <body>
 
 <div class="sidebar" id="mySidenav">
-    <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a>
+    <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin" target="_blank">GitHub</a>
+    <!-- <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a> -->
     <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
     <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
     <a class="nav_link" href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
