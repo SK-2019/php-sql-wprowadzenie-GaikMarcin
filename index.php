@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Marcin Gaik</title>
-<link rel="stylesheet" href="assets/style1.css">
+<link rel="stylesheet" href="style.css">
 <link rel="icon" href="https://icons-for-free.com/iconfiles/png/512/part+1+github-1320568339880199515.png" type="image/icon type">
 <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
