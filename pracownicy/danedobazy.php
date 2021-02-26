@@ -12,6 +12,7 @@
     <a class="nav_link" href="data_czas.php">Data i Czas</a>
     <a class="nav_link" href="function.php">Function</a>
     <a class="nav_link" href="../biblioteka/biblioteka.php">Biblioteka</a>
+    </div>
     <form action="strona.php" method="POST">
     <h3>Dodaj :</h3>
    <input type="text" name="imie" placeholder="Imie"><br>
@@ -25,7 +26,7 @@
    <br><input type="date" name="data_"><br>
    <input type="submit" value="Dodaj">
    </form> 
-</div>
+
 </html>
 
 <h3>Usuń :</h3>
