@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<h1>commit z virtualboxa</h1>
+
 <div class="sidebar" id="mySidenav">
     <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin" target="_blank">GitHub</a>
     <!-- <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a> -->
