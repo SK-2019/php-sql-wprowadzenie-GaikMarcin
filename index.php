@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Marcin Gaik</title>
+<title>Marcisn Gaik</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
 
