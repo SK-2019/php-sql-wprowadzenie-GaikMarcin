@@ -1,0 +1,13 @@
+{
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.postCommitCommand": "sync",
+    "git.allowNoVerifyCommit": true,
+    "git.enableSmartCommit": true,
+    "git.confirmNoVerifyCommit": false,
+    "discord.lowerDetailsNotFound": "No Workspace.",
+    "discord.lowerDetailsEditing": "No Workspace.",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false
+}
