@@ -1,13 +1,12 @@
 <?php
-$servername = $_SERVER['servername'];
-$username = $_SERVER['username'];
-$password = $_SERVER['password'];
-$dbname = $_SERVER['dbname']; 
+$servername = "mysql-marcin-gaik.alwaysdata.net";
+$username = "217182";
+$password = "Marcin123";
+$dbname = "marcin-gaik_php";
 
-// Create connection (łącze się z moją bazą danych)
+// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection (sprawdzam połączenie z bazą danych)
+// Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }

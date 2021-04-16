@@ -17,6 +17,8 @@
     <a class="nav_link" href="pracownicy/danedobazy.php">DaneDoBazy</a>
     <a class="nav_link" href="pracownicy/function.php">Function</a>
     <a class="nav_link" href="biblioteka/biblioteka.php">Biblioteka</a>
+    <a class="nav_link" href="flexbox/flexbox.html">Flexbox</a>
+    <a class="nav_link" href="wieledowielu/wieledowielu.php">wieledowielu</a>
 </div>
    <h1>Marcin Gaik 2Ti</h1>
 <?php
@@ -94,25 +96,6 @@ echo("<hr />");
                 echo("</tr>");
             }
         echo("</table>");
-echo("<hr />");
-function robot_sum($nr_zad, $f_sql){
-    require_once('conn.php');
-    $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
-    $sql=$f_sql;
-    $result=$conn->query($sql);
-        echo("<table border=1>");
-        echo("<h3>ZAD $nr_zad</h3>");
-        echo("<li>SQL: $sql");
-        echo("<th>nazwa działu</th>");
-        echo("<th>suma</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["suma"]."</td>");
-                echo("</tr>");
-                }
-        echo("</table>");
-        }
-        robot_sum(1,'SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy, organizacja where dzial=id_org group by dzial');
 echo("<hr />");
 ?>
 <script>
