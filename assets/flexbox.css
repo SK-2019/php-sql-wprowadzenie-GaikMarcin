@@ -22,13 +22,13 @@ body{
 .kwa{
     height: 100px;
     width: 100px;
-    background:lightskyblue;
+    background:lightblue;
     margin:5px;
 }
 .pros{
     height: 100px;
     width: 200px;
-    background: lightskyblue;
+    background: lightblue;
     margin:5px;
 }
 .a{
@@ -79,7 +79,7 @@ body{
 .linka{
     padding:5px;
     text-decoration: none;
-    background:lightseagreen;
+    background:lightblue;
 }
 .linka:hover{
     color:red;
