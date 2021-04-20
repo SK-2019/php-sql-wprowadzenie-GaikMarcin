@@ -82,6 +82,7 @@
     text-align:center;
   }
   .sidebar{
+    margin-top: 50px;
     height: 100%;
     width: 250px;
     position:fixed; 
@@ -116,4 +117,12 @@
     color:blue;
     border-left: 3px solid blue;
     transition: 0.3s;
+  }
+   .link{
+     color: blue;
+    font-size:20px; 
+   display: flex;
+   justify-content: center;
+    font-family:helvetica; 
+    text-align:center;
   }

@@ -2,27 +2,24 @@
 <html>
 <head>
 <title>Marcisn Gaik</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../assets/style1.css">
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
 
 </head>
 <body>
 <div class="sidebar" id="mySidenav">
-    <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin" target="_blank">GitHub</a>
-    <!-- <a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin"> GitHub </a> -->
-    <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy - wstęp</a>
-    <a class="nav_link" href="pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
-    <a class="nav_link" href="pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
-    <a class="nav_link" href="pracownicy/data_czas.php">Data i Czas</a>
-    <a class="nav_link" href="pracownicy/danedobazy.php">DaneDoBazy</a>
-    <a class="nav_link" href="pracownicy/function.php">Function</a>
-    <a class="nav_link" href="biblioteka/biblioteka.php">Biblioteka</a>
-    <a class="nav_link" href="flexbox/flexbox.html">Flexbox</a>
-    <a class="nav_link" href="wieledowielu/wieledowielu.php">wieledowielu</a>
+   <?php
+    include("../assets/menu.php");
+    ?>
 </div>
-   <h1>Marcin Gaik 2Ti</h1>
+  
+   <div class="nav">
+       <?php
+       include("../assets/header.php");
+       ?>
+</div>
 <?php
-   require_once('assets/conn.php');
+   require_once('../assets/conn.php');
   
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);

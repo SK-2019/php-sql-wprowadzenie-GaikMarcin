@@ -9,14 +9,9 @@
     <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
     <span onclick="openNav()">&#9776</span>
 <div class="sidebar" id="mySidenav">
-<a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-GaikMarcin" target="_blank">GitHub</a>
-     <a class="nav_link" href="../index.php">Strona Główna</a>
-    <a class="nav_link" href="../pracownicy/pracownicy.php">Pracownicy - wstęp</a>
-    <a class="nav_link" href="../pracownicy/funkcjeagregujace.php">Funkcje Agregujące</a>
-    <a class="nav_link" href="../pracownicy/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
-    <a class="nav_link" href="../pracownicy/data_czas.php">Data i Czas</a>
-    <a class="nav_link" href="../pracownicy/danedobazy.php">DaneDoBazy</a>
-    <a class="nav_link" href="../pracownicy/function.php">Function</a>
+    <?php
+        include("../assets/menu.php")
+    ?>
 
 </div>
     <form action="insert.php" method="POST">
