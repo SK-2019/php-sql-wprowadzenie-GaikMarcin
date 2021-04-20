@@ -2,24 +2,24 @@
 <html>
 <head>
 <title>Marcisn Gaik</title>
-<link rel="stylesheet" href="../assets/style1.css">
+<link rel="stylesheet" href="assets/style1.css">
 <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/pepega.png" type="image/icon type">
 
 </head>
 <body>
 <div class="sidebar" id="mySidenav">
    <?php
-    include("../assets/menu.php");
+    include("assets/menu.php");
     ?>
 </div>
   
    <div class="nav">
        <?php
-       include("../assets/header.php");
+       include("assets/header.php");
        ?>
 </div>
 <?php
-   require_once('../assets/conn.php');
+   require_once('assets/conn.php');
   
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
