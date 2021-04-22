@@ -5,10 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcin Gaik</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/style1.css">
 </head>
 <body>
+    <div class="nav">
+       <?php
+       include("../assets/header.php");
+       ?>
+       </div>
+    <div class="sidebar" id="mySidenav">
+    <?php
+    include("../assets/menu.php");
+    ?>
+    </div>
     <h1>Wiele do wielu</h1>
+    
+    
 </body>
 </html>
 <?php
