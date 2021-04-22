@@ -9,6 +9,9 @@
 </head>
 <body>
     <h1>Wiele do wielu</h1>
+    <?php
+    include("../assets/menu.php");
+    ?>
 </body>
 </html>
 <?php
