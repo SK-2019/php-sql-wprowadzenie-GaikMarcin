@@ -107,11 +107,3 @@ function openNav() {
 }
 
 </script>
-<?php
-$hostname = $_SERVER['HTTP_HOST'];
-
-if ($hostname == 'localhost:8003') {
-    require_once ("config.php");
-}
-
-?>
