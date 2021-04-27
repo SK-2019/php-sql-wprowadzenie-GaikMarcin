@@ -13,3 +13,4 @@
     <a class="nav_link" href="/../wieledowielu/szkola.php">Szkoła</a>
     <a class="nav_link" href="/../wieledowielu/przychodnia.php">Przychodnia</a>
     <a class="nav_link" href="/../wieledowielu/serwissamochodowy.php">Serwis Samochodowy</a>
+    <a class="nav_link" href="/../wieledowielu/spa.php">Spa</a>
