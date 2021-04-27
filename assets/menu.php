@@ -9,4 +9,5 @@
     <a class="nav_link" href="/../pracownicy/function.php">Function</a>
     <a class="nav_link" href="/../biblioteka/biblioteka.php">Biblioteka</a>
     <a class="nav_link" href="/../flexbox/flexbox.html">Flexbox</a>
-    <a class="nav_link" href="/../wieledowielu/wieledowielu.php">wieledowielu</a>
+    <a class="nav_link" href="/../wieledowielu/biblioteka.php">Biblioteka</a>
+    <a class="nav_link" href="/../wieledowielu/biblioteka.php">Szkoła</a>

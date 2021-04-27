@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <h1>Wiele do wielu</h1>
+    <h1>Biblioteka</h1>
 </body>
 </html>
 <?php

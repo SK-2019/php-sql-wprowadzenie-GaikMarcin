@@ -1,7 +1,7 @@
 <?php
 $hostname = $_SERVER['HTTP_HOST'];
 if ($hostname === '127.0.0.1'){
-    require_once("config.php");
+    require_once("../config.php");
 }
 $servername = $_SERVER['servername'];
 $username = $_SERVER['username'];
