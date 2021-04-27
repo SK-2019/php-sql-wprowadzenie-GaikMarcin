@@ -18,54 +18,49 @@
        include("../assets/header.php");
        ?>
 </div>
-    <h1>Przychodnia</h1>
+    <h1>SPA</h1>
 </body>
 </html>
 <?php
 
 require_once("../assets/conn.php");
-$sql=('SELECT * from pacjenci');
+$sql=('SELECT * from klienci');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>id</th>");
-        echo("<th>pacjenci</th>");
+        echo("<th>klienci</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id_pacjenta']."</td><td>".$row['pacjent']."</td>");
+                    echo("<td>".$row['id_klienta']."</td><td>".$row['klient']."</td>");
                 echo("</tr>");
             }
-        echo("</table>");
-        
-        $sql=('SELECT * from lekarze');
-    $result=$conn->query($sql);
-        echo("<hr />");
-        echo("<li>SQL: $sql");
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>lekarze</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['id_lekarza']."</td><td>".$row['lekarz']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-
-        
-        $sql=('SELECT * from lekarze,pacjenci,pacjent_lekarz where id_lekarza=id__lekarza and id_pacjenta=id__pacjenta');
+        echo("</table>");$sql=('SELECT * from fryzjerzy');
         $result=$conn->query($sql);
             echo("<hr />");
             echo("<li>SQL: $sql");
             echo("<table border=1>");
-            echo("<th>pacjent</th>");
-            echo("<th>lekarz</th>");
+            echo("<th>id</th>");
+            echo("<th>fryzjer</th>");
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
-                        echo("<td>".$row['pacjent']."</td><td>".$row['lekarz']."</td>");
+                        echo("<td>".$row['id_fryzjera']."</td><td>".$row['fryzjer']."</td>");
                     echo("</tr>");
                 }
             echo("</table>");
 
-        
+            $sql=('SELECT * from fryzjerzy,klienci,fryzjer_klient where id_klienta=id__klienta and id_fryzjera=id__fryzjera');
+            $result=$conn->query($sql);
+                echo("<hr />");
+                echo("<li>SQL: $sql");
+                echo("<table border=1>");
+                echo("<th>klient</th>");
+                echo("<th>fryzjer</th>");
+                    while($row=$result->fetch_assoc()){
+                        echo("<tr>");
+                            echo("<td>".$row['klient']."</td><td>".$row['fryzjer']."</td>");
+                        echo("</tr>");
+                    }
+                echo("</table>");
 ?>

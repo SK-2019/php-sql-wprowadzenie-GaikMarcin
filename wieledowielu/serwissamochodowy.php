@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="../assets/style1.css">
 </head>
 <body>
-
+<div class="sidebar" id="mySidenav">
+   <?php
+    include("../assets/menu.php");
+    ?>
+</div>
+<div class="nav">
+       <?php
+       include("../assets/header.php");
+       ?>
+</div>
     <h1>Serwis Samochodowy</h1>
 </body>
 </html>
@@ -43,17 +52,16 @@ $sql=('SELECT * from samochody');
             }
         echo("</table>");
 
-        $sql=('SELECT * from mechanicy,samochody where id_mechanika=id_samochodu');
+        $sql=('SELECT * from mechanicy,samochody,mechanik_auto where id_mechanika=id__mechanika and id_samochodu=id__samochodu');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<li>SQL: $sql");
         echo("<table border=1>");
-        echo("<th>id</th>");
         echo("<th>mechanik</th>");
         echo("<th>rejestracja</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['id_mechanika']."</td><td>".$row['mechanik']."</td><td>".$row['rejestracja']."</td>");
+                    echo("<td>".$row['mechanik']."</td><td>".$row['rejestracja']."</td>");
                 echo("</tr>");
             }
         echo("</table>");

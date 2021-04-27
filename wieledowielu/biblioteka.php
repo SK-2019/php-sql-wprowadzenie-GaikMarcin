@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="../assets/style1.css">
 </head>
 <body>
-
+<div class="sidebar" id="mySidenav">
+   <?php
+    include("../assets/menu.php");
+    ?>
+</div>
+<div class="nav">
+       <?php
+       include("../assets/header.php");
+       ?>
+</div>
     <h1>Biblioteka</h1>
 </body>
 </html>
