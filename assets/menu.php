@@ -10,4 +10,6 @@
     <a class="nav_link" href="/../biblioteka/biblioteka.php">Biblioteka</a>
     <a class="nav_link" href="/../flexbox/flexbox.html">Flexbox</a>
     <a class="nav_link" href="/../wieledowielu/biblioteka.php">Biblioteka</a>
-    <a class="nav_link" href="/../wieledowielu/biblioteka.php">Szkoła</a>
+    <a class="nav_link" href="/../wieledowielu/szkola.php">Szkoła</a>
+    <a class="nav_link" href="/../wieledowielu/przychodnia.php">Przychodnia</a>
+    <a class="nav_link" href="/../wieledowielu/serwissamochodowy.php">Serwis Samochodowy</a>

@@ -35,11 +35,26 @@ $sql=('SELECT * from pacjenci');
         echo("<li>SQL: $sql");
         echo("<table border=1>");
         echo("<th>id</th>");
-        echo("<th>pacjenci</th>");
+        echo("<th>lekarze</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                     echo("<td>".$row['id_lekarza']."</td><td>".$row['lekarz']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
+
+        $sql=('SELECT * from lekarze,pacjenci where id_lekarza=id_pacjenta');
+        $result=$conn->query($sql);
+            echo("<hr />");
+            echo("<li>SQL: $sql");
+            echo("<table border=1>");
+            echo("<th>id</th>");
+            echo("<th>pacjent</th>");
+            echo("<th>lekarz</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row['id_pacjenta']."</td><td>".$row['pacjent']."</td><td>".$row['lekarz']."</td>");
+                    echo("</tr>");
+                }
+            echo("</table>");
 ?>
